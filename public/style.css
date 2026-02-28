@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f0f0f;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---- Toolbar ---- */
+
+#toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  background: #1a1a2e;
+  border-bottom: 1px solid #333;
+  flex-shrink: 0;
+}
+
+#toolbar h1 {
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+#status {
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: #333;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+#status.connected {
+  background: #1b4332;
+  color: #95d5b2;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#controls button {
+  padding: 5px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+#controls button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+#btn-connect {
+  background: #16697a;
+  color: #fff;
+}
+
+#btn-connect:hover:not(:disabled) {
+  background: #1d8ba0;
+}
+
+#btn-disconnect {
+  background: #6b2737;
+  color: #fff;
+}
+
+#btn-disconnect:hover:not(:disabled) {
+  background: #8b3349;
+}
+
+#controls label {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+#controls select {
+  background: #222;
+  color: #ccc;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 12px;
+}
+
+#info {
+  margin-left: auto;
+  font-size: 12px;
+  color: #777;
+  white-space: nowrap;
+}
+
+/* ---- Viewport ---- */
+
+#viewport {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+}
+
+#screen {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: crosshair;
+  image-rendering: auto;
+}

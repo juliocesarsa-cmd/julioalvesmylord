@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remote Control</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="toolbar">
+    <h1>Remote Control</h1>
+    <div id="status">Disconnected</div>
+    <div id="controls">
+      <button id="btn-connect">Connect</button>
+      <button id="btn-disconnect" disabled>Disconnect</button>
+      <label>
+        <input type="checkbox" id="chk-input" checked />
+        Send input
+      </label>
+      <label>
+        Quality
+        <select id="sel-quality">
+          <option value="200">High (5 fps)</option>
+          <option value="333" selected>Medium (3 fps)</option>
+          <option value="500">Low (2 fps)</option>
+        </select>
+      </label>
+    </div>
+    <div id="info"></div>
+  </div>
+
+  <div id="viewport">
+    <canvas id="screen"></canvas>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
