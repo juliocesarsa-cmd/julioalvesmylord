@@ -1,0 +1,59 @@
+name: Instagram Autopost
+
+# Robô de publicação automática no Instagram.
+# Roda de hora em hora e publica os posts da fila (marketing/automacao/queue.json)
+# cujo horário agendado já chegou. Também dá pra rodar manualmente.
+
+on:
+  schedule:
+    # A cada hora, no minuto 0 (horário UTC). Os horários dos posts ficam no
+    # queue.json com fuso -03:00, então a comparação é feita corretamente.
+    - cron: "0 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Simular sem publicar (1 = sim)"
+        required: false
+        default: "0"
+
+# Permite que o workflow faça commit do queue.json atualizado (status dos posts).
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-autopost
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Publicar posts agendados
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          # Interruptor de emergência: crie a variável de repositório PAUSE=1
+          # (Settings > Variables) para pausar tudo sem mexer no código.
+          PAUSE: ${{ vars.PAUSE }}
+        run: node marketing/automacao/publish.mjs
+
+      - name: Commit do status atualizado da fila
+        run: |
+          if [[ -n "$(git status --porcelain marketing/automacao/queue.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add marketing/automacao/queue.json
+            git commit -m "chore(autopost): atualiza status da fila [skip ci]"
+            git push
+          else
+            echo "Nada mudou na fila."
+          fi

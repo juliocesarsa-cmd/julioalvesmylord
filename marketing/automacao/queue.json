@@ -1,0 +1,55 @@
+{
+  "_leiame": "O robô publica apenas posts com status 'pending' cujo scheduled_at já chegou. Para ativar um post: 1) suba a(s) imagem(ns) para uma URL PÚBLICA e preencha image_urls; 2) mude o status de 'draft' para 'pending'. Status possíveis: draft, pending, published, error, skipped.",
+  "timezone": "America/Sao_Paulo",
+  "posts": [
+    {
+      "id": "s1-seg-5erros",
+      "scheduled_at": "2026-06-22T12:30:00-03:00",
+      "type": "carousel",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/_8CG3xMsXrBJ87G",
+      "image_urls": [],
+      "caption": "Sua vitrine pode estar afastando clientes — e você nem percebe. 👀\n\nA vitrine é o seu melhor vendedor: trabalha 24h por dia. Veja os 5 erros mais comuns (e como corrigir cada um hoje):\n\n1. Vitrine lotada → menos é mais.\n2. Sem preço à vista → muita gente desiste.\n3. Iluminação fraca → produto bom parece velho.\n4. Nunca muda → troque a cada 15 dias.\n5. Sem um \"herói\" → escolha 1 produto-estrela.\n\nQual você vai corrigir primeiro? Comenta 👇 e salva pra revisar amanhã.\n\n#varejo #marketing #vitrine #lojista #vendas #marketingparavarejo #donodeloja #comerciovarejista #pequenosnegocios #gestaodeloja"
+    },
+    {
+      "id": "s1-ter-lojafisica",
+      "scheduled_at": "2026-06-23T19:30:00-03:00",
+      "type": "reels",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/1D8JrTVJitfNrlt",
+      "video_url": null,
+      "cover_url": null,
+      "image_urls": [],
+      "caption": "A loja física não vai acabar. O que vai acabar é a loja parada no tempo. 🏪\n\nQuem trata o digital como inimigo perde. Quem usa Instagram + WhatsApp + atendimento humano pra trazer gente pra dentro, ganha.\n\nE você, acha que a loja física tem futuro? Comenta sua opinião 👇\n\n#varejo #lojafisica #marketing #vendas #empreendedorismo #lojista #marketingdigital #comerciovarejista #donodeloja #pequenosnegocios"
+    },
+    {
+      "id": "s1-qua-preco",
+      "scheduled_at": "2026-06-24T12:30:00-03:00",
+      "type": "reels",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/STZx00LTP0sQJ3l",
+      "video_url": null,
+      "cover_url": null,
+      "image_urls": [],
+      "caption": "Preço no chute é prejuízo disfarçado. 💸\n\nO erro mais comum do varejo é confundir custo com preço. Seu preço precisa cobrir: custo do produto + despesas da loja + o seu lucro.\n\nDefina a margem que quer sobrar e calcule a partir dela. Preço certo = mais lucro sem espantar cliente.\n\nSalva pra usar na próxima vez que for etiquetar. 🔖\n\n#precificacao #varejo #marketing #vendas #lojista #gestaodeloja #margem #marketingparavarejo #pequenosnegocios #donodeloja"
+    },
+    {
+      "id": "s1-qui-bastidor",
+      "scheduled_at": "2026-06-25T19:30:00-03:00",
+      "type": "image",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/MfPNP4oj1ubkd9R",
+      "image_urls": [],
+      "caption": "Marketing de varejo não precisa ser complicado. 🛍️\n\nEu falo sobre isso porque cansei de ver lojista bom perdendo venda por causa de coisas simples: uma vitrine mal montada, um preço no chute, um Instagram parado.\n\nMarketing de verdade, no varejo, é o que você aplica na segunda de manhã — não teoria de slide. Meu objetivo é te dar o \"como fazer\", de graça.\n\nSe você é do varejo, me conta nos comentários o que você vende 👇\n\n#varejo #marketing #lojista #empreendedorismo #marcapessoal #vendas #pequenosnegocios #donodeloja #comerciovarejista #marketingparavarejo"
+    },
+    {
+      "id": "s1-sex-checklist",
+      "scheduled_at": "2026-06-26T12:30:00-03:00",
+      "type": "carousel",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/0jQwJUkTUUbWWN5",
+      "image_urls": [],
+      "caption": "A vitrine perfeita não é a mais cara — é a mais pensada. ✅\n\nAntes de abrir amanhã, passe por este checklist:\n\n✔️ Tem 1 produto-herói puxando o olhar?\n✔️ Os preços estão visíveis e legíveis?\n✔️ A iluminação valoriza os produtos?\n✔️ Tem espaço \"respirando\"?\n✔️ A vitrine conversa com a data/estação atual?\n✔️ Está limpa, sem etiqueta torta?\n\nMarcou todos? Sua vitrine já está à frente de 90% das lojas.\n\nSalva esse checklist e revise toda semana. Material completo no link da bio 👆\n\n#vitrine #varejo #marketing #lojista #vendas #checklist #gestaodeloja #marketingparavarejo #donodeloja #comerciovarejista"
+    }
+  ]
+}
