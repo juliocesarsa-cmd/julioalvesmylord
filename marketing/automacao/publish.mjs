@@ -119,6 +119,25 @@ async function publishReels(post) {
 
 const PUBLISHERS = { image: publishImage, carousel: publishCarousel, reels: publishReels };
 
+// Resolve uma mídia: se já for URL http(s), usa direto; senão, prefixa com a
+// base pública da fila (ex.: raw.githubusercontent.com/.../midia/).
+function resolveMedia(value, base) {
+  if (!value) return value;
+  if (/^https?:\/\//i.test(value)) return value;
+  if (!base) throw new Error(`"${value}" não é URL e media_base_url não está definido`);
+  return base.replace(/\/$/, "") + "/" + value.replace(/^\//, "");
+}
+
+// Devolve uma cópia do post com todas as mídias resolvidas para URL pública.
+function withResolvedMedia(post, base) {
+  return {
+    ...post,
+    image_urls: (post.image_urls || []).map((u) => resolveMedia(u, base)),
+    video_url: resolveMedia(post.video_url, base),
+    cover_url: resolveMedia(post.cover_url, base),
+  };
+}
+
 async function main() {
   const raw = await readFile(QUEUE_PATH, "utf8");
   const queue = JSON.parse(raw);
@@ -173,11 +192,12 @@ async function main() {
     }
     try {
       log(`Publicando ${post.id} (${post.type})...`);
+      const resolved = withResolvedMedia(post, queue.media_base_url);
       if (DRY_RUN) {
-        log(`  [DRY_RUN] publicaria: ${JSON.stringify({ type: post.type, image_urls: post.image_urls, video_url: post.video_url })}`);
+        log(`  [DRY_RUN] publicaria: ${JSON.stringify({ type: resolved.type, image_urls: resolved.image_urls, video_url: resolved.video_url })}`);
         post.status = "dry_run_ok";
       } else {
-        const mediaId = await publisher(post);
+        const mediaId = await publisher(resolved);
         post.status = "published";
         post.published_at = new Date().toISOString();
         post.instagram_media_id = mediaId;
