@@ -231,6 +231,15 @@
       "canva_url": null,
       "image_urls": [],
       "caption": "Como trabalhar comigo. 🤝\n\nSe você é lojista e quer vender mais sem complicar, eu posso te ajudar:\n\n• Mentoria individual de marketing para o seu varejo\n• Diagnóstico da sua loja e do seu Instagram\n• Plano de ação prático, feito pra sua realidade\n\nNão é teoria de slide — é o que você aplica na segunda de manhã.\n\nVagas abertas essa semana. Garanta a sua pelo link na bio ou me chama na DM 📩\n\n#mentoria #varejo #marketing #lojista #vendas #marketingparavarejo #consultoria #gestaodeloja #donodeloja #comerciovarejista"
+    },
+    {
+      "id": "teste-publicacao",
+      "_nota": "POST DE TESTE. Cole a URL publica da imagem em image_urls e mude status para 'pending'. A data ja esta no passado, entao publica no proximo disparo do robo. Depois do teste, apague este post ou deixe como 'published'.",
+      "scheduled_at": "2026-06-20T00:00:00-03:00",
+      "type": "image",
+      "status": "draft",
+      "image_urls": [],
+      "caption": "🚀 Teste do sistema de publicação automática. Em breve, conteúdo de verdade sobre marketing e varejo por aqui. #teste #marketing #varejo"
     }
   ]
 }
