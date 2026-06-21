@@ -11,7 +11,7 @@
 //   PAUSE=1          -> pausa total: não publica nada (interruptor de emergência)
 //   GRAPH_VERSION    -> versão da Graph API (padrão v21.0)
 
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, appendFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -30,6 +30,20 @@ const MAX_LATE_HOURS = 48;
 
 function log(...args) {
   console.log(`[${new Date().toISOString()}]`, ...args);
+}
+
+// Expõe o resultado da execução para o GitHub Actions (passo de notificação).
+async function writeOutputs({ published = 0, errors = 0, results = [] }) {
+  if (!process.env.GITHUB_OUTPUT) return;
+  const lines = results.length
+    ? results.map((r) => `- ${r.id}: ${r.outcome}${r.detail ? ` (${r.detail})` : ""}`).join("\n")
+    : "Nenhuma publicação nesta execução.";
+  const out = [
+    `published=${published}`,
+    `errors=${errors}`,
+    `summary<<__SUMMARY__\n${lines}\n__SUMMARY__`,
+  ].join("\n");
+  await appendFile(process.env.GITHUB_OUTPUT, out + "\n");
 }
 
 async function graph(path, params, method = "POST") {
@@ -111,9 +125,11 @@ async function main() {
   const now = Date.now();
   let changed = false;
   let publishedCount = 0;
+  const results = []; // { id, outcome, detail } para o resumo/notificação
 
   if (PAUSE) {
     log("PAUSE=1 ativo — robô pausado, nada será publicado.");
+    await writeOutputs({});
     return;
   }
   if (!DRY_RUN && (!IG_USER_ID || !TOKEN)) {
@@ -132,6 +148,7 @@ async function main() {
 
   if (due.length === 0) {
     log("Nenhum post para publicar agora.");
+    await writeOutputs({});
     return;
   }
 
@@ -141,6 +158,7 @@ async function main() {
       log(`Post ${post.id}: atrasado ${lateHours.toFixed(0)}h (>${MAX_LATE_HOURS}h), marcando como skipped.`);
       post.status = "skipped";
       post.note = `pulado por atraso de ${lateHours.toFixed(0)}h`;
+      results.push({ id: post.id, outcome: "skipped", detail: post.note });
       changed = true;
       continue;
     }
@@ -149,6 +167,7 @@ async function main() {
       log(`Post ${post.id}: tipo desconhecido "${post.type}", marcando erro.`);
       post.status = "error";
       post.error = `tipo desconhecido: ${post.type}`;
+      results.push({ id: post.id, outcome: "error", detail: post.error });
       changed = true;
       continue;
     }
@@ -163,6 +182,7 @@ async function main() {
         post.published_at = new Date().toISOString();
         post.instagram_media_id = mediaId;
         publishedCount++;
+        results.push({ id: post.id, outcome: "published", detail: `media_id=${mediaId}` });
         log(`  ✓ publicado: media_id=${mediaId}`);
       }
       changed = true;
@@ -171,6 +191,7 @@ async function main() {
       post.status = "error";
       post.error = err.message;
       post.last_attempt = new Date().toISOString();
+      results.push({ id: post.id, outcome: "error", detail: err.message });
       changed = true;
     }
   }
@@ -179,6 +200,9 @@ async function main() {
     await writeFile(QUEUE_PATH, JSON.stringify(queue, null, 2) + "\n");
     log(`Fila atualizada. Publicados nesta execução: ${publishedCount}.`);
   }
+
+  const errorCount = results.filter((r) => r.outcome === "error").length;
+  await writeOutputs({ published: publishedCount, errors: errorCount, results });
 }
 
 main().catch((err) => {

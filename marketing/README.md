@@ -16,6 +16,7 @@ com o mesmo rigor que uma agência trataria uma grande conta.
 | [`05-legendas-semana1.md`](05-legendas-semana1.md) | Legendas completas + roteiros de Reels da Semana 1 |
 | [`06-identidade-visual.md`](06-identidade-visual.md) | Paleta (branco + azul), tipografia e regras |
 | [`07-agendamento-meta-business.md`](07-agendamento-meta-business.md) | Como agendar tudo no Meta Business Suite (com revisão) |
+| [`automacao/`](automacao/) | Robô de publicação 100% automática (Instagram Graph API + GitHub Actions) |
 
 ## Como usar (rotina de "agência")
 

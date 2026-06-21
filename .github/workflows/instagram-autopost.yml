@@ -37,6 +37,7 @@ jobs:
           node-version: "20"
 
       - name: Publicar posts agendados
+        id: publish
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -45,6 +46,34 @@ jobs:
           # (Settings > Variables) para pausar tudo sem mexer no código.
           PAUSE: ${{ vars.PAUSE }}
         run: node marketing/automacao/publish.mjs
+
+      - name: Notificar por e-mail (se houve publicação ou erro)
+        # Só envia se houve atividade e se os secrets de e-mail existem.
+        if: >-
+          ${{ env.MAIL_USERNAME != '' &&
+              (steps.publish.outputs.published != '0' || steps.publish.outputs.errors != '0') }}
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: Robô Instagram <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ secrets.MAIL_TO }}
+          subject: "[Instagram] ${{ steps.publish.outputs.published }} publicado(s), ${{ steps.publish.outputs.errors }} erro(s)"
+          body: |
+            Execução do robô de publicação automática:
+
+            Publicados: ${{ steps.publish.outputs.published }}
+            Erros: ${{ steps.publish.outputs.errors }}
+
+            Detalhes:
+            ${{ steps.publish.outputs.summary }}
+
+            Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
       - name: Commit do status atualizado da fila
         run: |

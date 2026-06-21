@@ -98,6 +98,46 @@ Reels precisam de **vídeo** (`video_url` público). Sem vídeo, deixe o post co
 `draft` ou troque o `type` para `image` usando a arte estática. O robô espera o
 processamento do vídeo terminar antes de publicar.
 
+## Renovação automática do token (opcional, recomendado)
+
+O token expira em ~60 dias. Para não precisar renovar na mão, há o workflow
+`instagram-token-refresh.yml`, que roda **dia 1 de cada mês**, gera um token
+novo e grava sozinho no secret `IG_ACCESS_TOKEN`.
+
+Para ativar, adicione mais 3 secrets:
+- `IG_APP_ID` — ID do app no Meta for Developers.
+- `IG_APP_SECRET` — segredo do app.
+- `GH_PAT` — um **Personal Access Token** (fine-grained) com permissão de
+  **Secrets: Read and write** neste repositório (é o que permite o workflow
+  reescrever o `IG_ACCESS_TOKEN`).
+
+Teste manual: aba **Actions → Instagram Token Refresh → Run workflow**.
+
+## Notificação por e-mail (opcional)
+
+O workflow de publicação envia um e-mail sempre que **publica** ou dá **erro**
+(usa SMTP do Gmail). Para ativar, adicione os secrets:
+- `MAIL_USERNAME` — seu e-mail do Gmail.
+- `MAIL_PASSWORD` — uma **senha de app** do Gmail (não a senha normal; gere em
+  Conta Google → Segurança → Senhas de app).
+- `MAIL_TO` — para quem enviar o aviso (pode ser o seu próprio e-mail).
+
+Se esses secrets não existirem, o robô simplesmente não envia e-mail — o resto
+continua funcionando.
+
+## Resumo dos secrets
+
+| Secret | Obrigatório? | Para quê |
+|--------|--------------|----------|
+| `IG_USER_ID` | Sim | Publicar |
+| `IG_ACCESS_TOKEN` | Sim | Publicar |
+| `IG_APP_ID` | Só p/ renovar token | Refresh |
+| `IG_APP_SECRET` | Só p/ renovar token | Refresh |
+| `GH_PAT` | Só p/ renovar token | Gravar token novo |
+| `MAIL_USERNAME` / `MAIL_PASSWORD` / `MAIL_TO` | Só p/ e-mail | Notificação |
+
+E uma **variável** (não secret) opcional: `PAUSE=1` para pausar tudo.
+
 ## Limitações honestas
 
 - A Graph API publica imagem, carrossel e Reels — **não** publica Stories

@@ -1,0 +1,45 @@
+name: Instagram Token Refresh
+
+# Renova o token de longa duração do Instagram automaticamente e grava o novo
+# valor de volta no secret IG_ACCESS_TOKEN. Roda dia 1 de cada mês (o token
+# dura ~60 dias, então renovar mensalmente mantém uma boa margem).
+
+on:
+  schedule:
+    - cron: "0 6 1 * *" # dia 1 às 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Renovar token
+        id: refresh
+        env:
+          IG_APP_ID: ${{ secrets.IG_APP_ID }}
+          IG_APP_SECRET: ${{ secrets.IG_APP_SECRET }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: node marketing/automacao/refresh-token.mjs
+
+      - name: Gravar novo token no secret
+        env:
+          # PAT com permissão de escrita em Secrets deste repositório.
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          NEW_TOKEN: ${{ steps.refresh.outputs.new_token }}
+        run: |
+          if [[ -z "$NEW_TOKEN" ]]; then
+            echo "Nenhum token novo retornado — abortando."; exit 1
+          fi
+          echo "$NEW_TOKEN" | gh secret set IG_ACCESS_TOKEN --repo "$GITHUB_REPOSITORY"
+          echo "Secret IG_ACCESS_TOKEN atualizado (validade ~${{ steps.refresh.outputs.expires_days }} dias)."
