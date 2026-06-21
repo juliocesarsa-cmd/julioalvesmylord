@@ -1,7 +1,7 @@
 {
   "_leiame": "O robô publica apenas posts com status 'pending' cujo scheduled_at já chegou. Para ativar: 1) suba a(s) midia(s) para uma URL PUBLICA e preencha image_urls (ou video_url para reels); 2) mude status de 'draft' para 'pending'. Status: draft, pending, published, error, skipped. Posts com '_criativo_pendente: true' ainda nao tem arte gerada no Canva (cota).",
   "timezone": "America/Sao_Paulo",
-  "media_base_url": "https://raw.githubusercontent.com/juliocesarsa-cmd/julioalvesmylord/main/marketing/automacao/midia",
+  "media_base_url": "https://raw.githubusercontent.com/juliocesarsa-cmd/julioalvesmylord/claude/remote-control-ux38B/marketing/automacao/midia",
   "posts": [
     {
       "id": "s1-seg-5erros",

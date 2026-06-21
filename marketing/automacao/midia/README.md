@@ -5,15 +5,16 @@ exige uma **URL pública**, o robô monta o link assim:
 
 ```
 media_base_url (no queue.json) + nome do arquivo
-= https://raw.githubusercontent.com/juliocesarsa-cmd/julioalvesmylord/main/marketing/automacao/midia/<arquivo>
+= https://raw.githubusercontent.com/juliocesarsa-cmd/julioalvesmylord/claude/remote-control-ux38B/marketing/automacao/midia/<arquivo>
 ```
 
-> ⚠️ Isso só funciona se o repositório for **público** (o GitHub raw precisa ser
-> acessível pela Meta). Se o repo for privado, use um host externo (Cloudinary,
-> S3, Supabase) e coloque a URL completa direto no `image_urls`/`video_url`.
+> ✅ O repositório é **público**, então o GitHub raw é acessível pela Meta.
+> Se um dia torná-lo privado, use um host externo (Cloudinary, S3, Supabase) e
+> coloque a URL completa direto no `image_urls`/`video_url`.
 >
-> ⚠️ A base aponta para o branch **main**. Se as imagens estiverem em outro
-> branch, ajuste `media_base_url` no `queue.json`.
+> ⚠️ A base aponta para o branch padrão **claude/remote-control-ux38B** (é de lá
+> que o cron do GitHub Actions roda). Se mudar o branch, ajuste
+> `media_base_url` no `queue.json`.
 
 ## Como exportar do Canva e nomear
 
