@@ -13,6 +13,9 @@ com o mesmo rigor que uma agência trataria uma grande conta.
 | [`02-calendario-conteudo.md`](02-calendario-conteudo.md) | Plano editorial de 30 dias com ideias prontas de post |
 | [`03-bio-pilares-hashtags.md`](03-bio-pilares-hashtags.md) | Bio otimizada, pilares de conteúdo, hashtags e templates de legenda |
 | [`04-criativos.md`](04-criativos.md) | Briefings de arte para gerar os criativos (Canva) |
+| [`05-legendas-semana1.md`](05-legendas-semana1.md) | Legendas completas + roteiros de Reels da Semana 1 |
+| [`06-identidade-visual.md`](06-identidade-visual.md) | Paleta (branco + azul), tipografia e regras |
+| [`07-agendamento-meta-business.md`](07-agendamento-meta-business.md) | Como agendar tudo no Meta Business Suite (com revisão) |
 
 ## Como usar (rotina de "agência")
 
