@@ -9,6 +9,7 @@ com o mesmo rigor que uma agência trataria uma grande conta.
 
 | Arquivo | Para que serve |
 |---------|----------------|
+| [`COMECE-AQUI.md`](COMECE-AQUI.md) | **👉 Guia simples de postagem manual: link da arte + legenda pronta de cada post** |
 | [`01-estrategia.md`](01-estrategia.md) | Posicionamento, público-alvo, objetivos, metas e voz da marca |
 | [`02-calendario-conteudo.md`](02-calendario-conteudo.md) | Plano editorial de 30 dias com ideias prontas de post |
 | [`03-bio-pilares-hashtags.md`](03-bio-pilares-hashtags.md) | Bio otimizada, pilares de conteúdo, hashtags e templates de legenda |
