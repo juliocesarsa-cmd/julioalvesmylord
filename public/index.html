@@ -13,6 +13,7 @@
     <div id="controls">
       <button id="btn-connect">Connect</button>
       <button id="btn-disconnect" disabled>Disconnect</button>
+      <button id="btn-whatsapp">WhatsApp</button>
       <label>
         <input type="checkbox" id="chk-input" checked />
         Send input
@@ -31,6 +32,24 @@
 
   <div id="viewport">
     <canvas id="screen"></canvas>
+  </div>
+
+  <div id="wa-panel" class="hidden">
+    <div id="wa-card">
+      <div id="wa-header">
+        <span>WhatsApp</span>
+        <button id="wa-close" title="Close">&times;</button>
+      </div>
+      <div id="wa-status">Not connected</div>
+      <div id="wa-qr-wrap">
+        <img id="wa-qr" alt="WhatsApp QR code" />
+        <p id="wa-hint"></p>
+      </div>
+      <div id="wa-actions">
+        <button id="wa-connect">Connect</button>
+        <button id="wa-logout" disabled>Logout</button>
+      </div>
+    </div>
   </div>
 
   <script src="/socket.io/socket.io.js"></script>

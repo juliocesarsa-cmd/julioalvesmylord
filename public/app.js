@@ -217,3 +217,79 @@ btnDisconnect.addEventListener("click", disconnect);
 
 canvas.tabIndex = 0;
 canvas.addEventListener("click", () => canvas.focus());
+
+/* ---- WhatsApp ---- */
+
+const btnWhatsApp = document.getElementById("btn-whatsapp");
+const waPanel = document.getElementById("wa-panel");
+const waClose = document.getElementById("wa-close");
+const waStatusEl = document.getElementById("wa-status");
+const waQr = document.getElementById("wa-qr");
+const waHint = document.getElementById("wa-hint");
+const waConnect = document.getElementById("wa-connect");
+const waLogout = document.getElementById("wa-logout");
+
+let waSocket = null;
+
+const WA_LABELS = {
+  disconnected: "Not connected",
+  initializing: "Starting…",
+  qr: "Scan the QR code with WhatsApp",
+  authenticated: "Authenticated, loading…",
+  ready: "Connected",
+  auth_failure: "Authentication failed — try again",
+  error: "Failed to start WhatsApp",
+};
+
+function waEnsureSocket() {
+  if (waSocket) return;
+  // Dedicated connection for WhatsApp events, independent of the
+  // screen-streaming socket so it works whether or not you're streaming.
+  waSocket = io();
+  waSocket.on("wa-state", renderWaState);
+}
+
+function renderWaState({ status, qr }) {
+  waStatusEl.textContent = WA_LABELS[status] || status;
+  waStatusEl.className = status === "ready" ? "connected" : "";
+
+  if (status === "qr" && qr) {
+    waQr.src = qr;
+    waQr.style.display = "block";
+    waHint.textContent =
+      "On your phone: WhatsApp → Settings → Linked devices → Link a device";
+  } else {
+    waQr.removeAttribute("src");
+    waQr.style.display = "none";
+    waHint.textContent =
+      status === "ready" ? "Your device is linked." : "";
+  }
+
+  const busy =
+    status === "ready" ||
+    status === "initializing" ||
+    status === "authenticated" ||
+    status === "qr";
+  waConnect.disabled = busy;
+  waLogout.disabled = !(status === "ready" || status === "authenticated");
+}
+
+btnWhatsApp.addEventListener("click", () => {
+  waEnsureSocket();
+  waPanel.classList.remove("hidden");
+});
+
+waClose.addEventListener("click", () => waPanel.classList.add("hidden"));
+
+waPanel.addEventListener("click", (e) => {
+  if (e.target === waPanel) waPanel.classList.add("hidden");
+});
+
+waConnect.addEventListener("click", () => {
+  waEnsureSocket();
+  waSocket.emit("wa-connect");
+});
+
+waLogout.addEventListener("click", () => {
+  if (waSocket) waSocket.emit("wa-logout");
+});

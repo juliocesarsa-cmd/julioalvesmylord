@@ -9,6 +9,7 @@ Web-based desktop remote control. View and interact with a remote desktop from y
 - **Keyboard forwarding** — key presses including modifier combos (Ctrl+C, Alt+Tab, etc.)
 - **Toggle input** — enable/disable input sending without disconnecting
 - **Adjustable frame rate** — choose between 2, 3, or 5 fps
+- **WhatsApp connection** — link a WhatsApp account by scanning a QR code from the browser
 
 ## Prerequisites
 
@@ -56,6 +57,28 @@ Browser (client)          Server (host)
 3. Client draws each frame to an HTML `<canvas>`
 4. Mouse/keyboard events on the canvas are translated to remote coordinates and forwarded to the server
 5. Server replays the input using `robotjs`
+
+## WhatsApp connection
+
+The toolbar has a **WhatsApp** button that opens a panel for linking a WhatsApp
+account, powered by [`whatsapp-web.js`](https://github.com/pedroslopez/whatsapp-web.js).
+
+1. Click **WhatsApp**, then **Connect** — the server starts a headless browser
+   session and generates a QR code.
+2. Scan the QR code from your phone: **WhatsApp → Settings → Linked devices →
+   Link a device**.
+3. Once linked, the status shows **Connected**. The session is saved on disk
+   (`.wwebjs_auth/`), so it stays linked across server restarts until you click
+   **Logout**.
+
+Notes:
+
+- `whatsapp-web.js` drives a real WhatsApp Web session through Puppeteer
+  (Chromium), so the first `npm install` downloads a Chromium build.
+- If the WhatsApp dependencies aren't installed, the rest of the app still runs;
+  the server logs `WhatsApp: disabled` on startup.
+- This is an unofficial library and not affiliated with WhatsApp. Use it in line
+  with WhatsApp's Terms of Service.
 
 ## Security
 

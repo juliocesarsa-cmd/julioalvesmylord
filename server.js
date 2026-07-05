@@ -32,6 +32,20 @@ try {
   console.warn("[warn] robotjs not available — input forwarding disabled");
 }
 
+// --- WhatsApp connection (optional) ---
+
+let whatsappEnabled = false;
+try {
+  const { setupWhatsApp } = require("./whatsapp");
+  setupWhatsApp(io);
+  whatsappEnabled = true;
+} catch (err) {
+  console.warn(
+    "[warn] whatsapp-web.js not available — WhatsApp disabled:",
+    err.message
+  );
+}
+
 // --- Static files ---
 
 app.use(express.static(path.join(__dirname, "public")));
@@ -141,4 +155,5 @@ server.listen(PORT, () => {
     `Capture: ${screenshot ? `every ${CAPTURE_INTERVAL_MS}ms` : "disabled"}`
   );
   console.log(`Input:   ${robot ? "enabled" : "disabled"}`);
+  console.log(`WhatsApp: ${whatsappEnabled ? "enabled" : "disabled"}`);
 });

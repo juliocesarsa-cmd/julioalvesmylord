@@ -13,6 +13,8 @@
     "express": "^4.18.2",
     "socket.io": "^4.7.4",
     "screenshot-desktop": "^1.15.0",
-    "robotjs": "^0.6.0"
+    "robotjs": "^0.6.0",
+    "whatsapp-web.js": "^1.26.0",
+    "qrcode": "^1.5.3"
   }
 }

@@ -84,6 +84,15 @@ body {
   background: #8b3349;
 }
 
+#btn-whatsapp {
+  background: #128c7e;
+  color: #fff;
+}
+
+#btn-whatsapp:hover:not(:disabled) {
+  background: #16a394;
+}
+
 #controls label {
   font-size: 13px;
   display: flex;
@@ -126,4 +135,127 @@ body {
   object-fit: contain;
   cursor: crosshair;
   image-rendering: auto;
+}
+
+/* ---- WhatsApp panel ---- */
+
+#wa-panel {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+#wa-panel.hidden {
+  display: none;
+}
+
+#wa-card {
+  width: 360px;
+  max-width: calc(100vw - 32px);
+  background: #1a1a2e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+#wa-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+#wa-close {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#wa-close:hover {
+  color: #ddd;
+}
+
+#wa-status {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: #333;
+  color: #aaa;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+#wa-status.connected {
+  background: #1b4332;
+  color: #95d5b2;
+}
+
+#wa-qr-wrap {
+  text-align: center;
+  min-height: 40px;
+}
+
+#wa-qr {
+  display: none;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px;
+}
+
+#wa-hint {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+#wa-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+#wa-actions button {
+  flex: 1;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+#wa-actions button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+#wa-connect {
+  background: #128c7e;
+  color: #fff;
+}
+
+#wa-connect:hover:not(:disabled) {
+  background: #16a394;
+}
+
+#wa-logout {
+  background: #6b2737;
+  color: #fff;
+}
+
+#wa-logout:hover:not(:disabled) {
+  background: #8b3349;
 }
