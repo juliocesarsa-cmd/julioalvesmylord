@@ -1,0 +1,245 @@
+{
+  "_leiame": "O robô publica apenas posts com status 'pending' cujo scheduled_at já chegou. Para ativar: 1) suba a(s) midia(s) para uma URL PUBLICA e preencha image_urls (ou video_url para reels); 2) mude status de 'draft' para 'pending'. Status: draft, pending, published, error, skipped. Posts com '_criativo_pendente: true' ainda nao tem arte gerada no Canva (cota).",
+  "timezone": "America/Sao_Paulo",
+  "media_base_url": "https://raw.githubusercontent.com/juliocesarsa-cmd/julioalvesmylord/claude/remote-control-ux38B/marketing/automacao/midia",
+  "posts": [
+    {
+      "id": "s1-seg-5erros",
+      "scheduled_at": "2026-06-22T12:30:00-03:00",
+      "type": "carousel",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/_8CG3xMsXrBJ87G",
+      "image_urls": [
+        "s1-seg-5erros-1.jpg",
+        "s1-seg-5erros-2.jpg",
+        "s1-seg-5erros-3.jpg",
+        "s1-seg-5erros-4.jpg",
+        "s1-seg-5erros-5.jpg"
+      ],
+      "caption": "Sua vitrine pode estar afastando clientes — e você nem percebe. 👀\n\nA vitrine é o seu melhor vendedor: trabalha 24h por dia. Veja os 5 erros mais comuns (e como corrigir cada um hoje):\n\n1. Vitrine lotada → menos é mais.\n2. Sem preço à vista → muita gente desiste.\n3. Iluminação fraca → produto bom parece velho.\n4. Nunca muda → troque a cada 15 dias.\n5. Sem um \"herói\" → escolha 1 produto-estrela.\n\nQual você vai corrigir primeiro? Comenta 👇 e salva pra revisar amanhã.\n\n#varejo #marketing #vitrine #lojista #vendas #marketingparavarejo #donodeloja #comerciovarejista #pequenosnegocios #gestaodeloja"
+    },
+    {
+      "id": "s1-ter-lojafisica",
+      "scheduled_at": "2026-06-23T19:30:00-03:00",
+      "type": "reels",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/1D8JrTVJitfNrlt",
+      "video_url": "s1-ter-lojafisica.mp4",
+      "cover_url": "s1-ter-lojafisica-cover.jpg",
+      "image_urls": [],
+      "caption": "A loja física não vai acabar. O que vai acabar é a loja parada no tempo. 🏪\n\nQuem trata o digital como inimigo perde. Quem usa Instagram + WhatsApp + atendimento humano pra trazer gente pra dentro, ganha.\n\nE você, acha que a loja física tem futuro? Comenta sua opinião 👇\n\n#varejo #lojafisica #marketing #vendas #empreendedorismo #lojista #marketingdigital #comerciovarejista #donodeloja #pequenosnegocios"
+    },
+    {
+      "id": "s1-qua-preco",
+      "scheduled_at": "2026-06-24T12:30:00-03:00",
+      "type": "reels",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/STZx00LTP0sQJ3l",
+      "video_url": "s1-qua-preco.mp4",
+      "cover_url": "s1-qua-preco-cover.jpg",
+      "image_urls": [],
+      "caption": "Preço no chute é prejuízo disfarçado. 💸\n\nO erro mais comum do varejo é confundir custo com preço. Seu preço precisa cobrir: custo do produto + despesas da loja + o seu lucro.\n\nDefina a margem que quer sobrar e calcule a partir dela. Preço certo = mais lucro sem espantar cliente.\n\nSalva pra usar na próxima vez que for etiquetar. 🔖\n\n#precificacao #varejo #marketing #vendas #lojista #gestaodeloja #margem #marketingparavarejo #pequenosnegocios #donodeloja"
+    },
+    {
+      "id": "s1-qui-bastidor",
+      "scheduled_at": "2026-06-25T19:30:00-03:00",
+      "type": "image",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/MfPNP4oj1ubkd9R",
+      "image_urls": ["s1-qui-bastidor.jpg"],
+      "caption": "Marketing de varejo não precisa ser complicado. 🛍️\n\nEu falo sobre isso porque cansei de ver lojista bom perdendo venda por causa de coisas simples: uma vitrine mal montada, um preço no chute, um Instagram parado.\n\nMarketing de verdade, no varejo, é o que você aplica na segunda de manhã — não teoria de slide. Meu objetivo é te dar o \"como fazer\", de graça.\n\nSe você é do varejo, me conta nos comentários o que você vende 👇\n\n#varejo #marketing #lojista #empreendedorismo #marcapessoal #vendas #pequenosnegocios #donodeloja #comerciovarejista #marketingparavarejo"
+    },
+    {
+      "id": "s1-sex-checklist",
+      "scheduled_at": "2026-06-26T12:30:00-03:00",
+      "type": "carousel",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/0jQwJUkTUUbWWN5",
+      "image_urls": [
+        "s1-sex-checklist-1.jpg",
+        "s1-sex-checklist-2.jpg",
+        "s1-sex-checklist-3.jpg"
+      ],
+      "caption": "A vitrine perfeita não é a mais cara — é a mais pensada. ✅\n\nAntes de abrir amanhã, passe por este checklist:\n\n✔️ Tem 1 produto-herói puxando o olhar?\n✔️ Os preços estão visíveis e legíveis?\n✔️ A iluminação valoriza os produtos?\n✔️ Tem espaço \"respirando\"?\n✔️ A vitrine conversa com a data/estação atual?\n✔️ Está limpa, sem etiqueta torta?\n\nMarcou todos? Sua vitrine já está à frente de 90% das lojas.\n\nSalva esse checklist e revise toda semana. Material completo no link da bio 👆\n\n#vitrine #varejo #marketing #lojista #vendas #checklist #gestaodeloja #marketingparavarejo #donodeloja #comerciovarejista"
+    },
+
+    {
+      "id": "s2-seg-upsell",
+      "scheduled_at": "2026-06-29T12:30:00-03:00",
+      "type": "reels",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/1zTacAHCF7qEqYp",
+      "video_url": "s2-seg-upsell.mp4",
+      "cover_url": "s2-seg-upsell-cover.jpg",
+      "image_urls": [],
+      "caption": "3 frases que fazem o cliente comprar mais (sem forçar a venda). 🗣️\n\n1. \"Quer levar junto e já garantir?\" — cria urgência leve.\n2. \"Esse aqui combina perfeito com o que você escolheu.\" — upsell natural.\n3. \"Por mais um pouquinho, você leva a versão completa.\" — eleva o ticket.\n\nVenda boa não empurra — sugere. Salva e testa na loja essa semana. 🔖\n\n#vendas #varejo #upsell #lojista #atendimento #marketingparavarejo #ticketmedio #gestaodeloja #donodeloja #comerciovarejista"
+    },
+    {
+      "id": "s2-ter-promocao",
+      "scheduled_at": "2026-06-30T19:30:00-03:00",
+      "type": "carousel",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/FICe3vI0KkV8XMt",
+      "image_urls": [
+        "s2-ter-promocao-1.jpg",
+        "s2-ter-promocao-2.jpg",
+        "s2-ter-promocao-3.jpg"
+      ],
+      "caption": "Promoção que dá lucro não é a maior, é a mais pensada. 📊\n\nAntes de baixar o preço, faça assim:\n\n1. Defina o objetivo (girar estoque? atrair cliente novo?).\n2. Calcule até onde pode descontar SEM zerar a margem.\n3. Crie uma condição (combo, leve 2, brinde) em vez de só cortar preço.\n4. Coloque prazo — promoção sem fim vira preço normal.\n\nSalva pra montar a tua próxima promo do jeito certo. 🔖\n\n#promocao #varejo #marketing #vendas #lojista #margem #gestaodeloja #marketingparavarejo #donodeloja #pequenosnegocios"
+    },
+    {
+      "id": "s2-qua-descontobrinde",
+      "scheduled_at": "2026-07-01T12:30:00-03:00",
+      "type": "image",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/64EqMnyy-2U5F76",
+      "image_urls": ["s2-qua-descontobrinde.jpg"],
+      "caption": "Desconto ou brinde? 🤔\n\nDesconto mexe com o bolso, mas corrói sua margem e vicia o cliente a esperar promoção. Brinde agrega valor sem derrubar o preço — e ainda surpreende.\n\nNão existe resposta única: depende do seu produto e do seu objetivo.\n\nE na SUA loja, o que vende mais: desconto ou brinde? Comenta 👇\n\n#varejo #vendas #marketing #lojista #promocao #marketingparavarejo #gestaodeloja #donodeloja #comerciovarejista #pequenosnegocios"
+    },
+    {
+      "id": "s2-qui-case",
+      "scheduled_at": "2026-07-02T19:30:00-03:00",
+      "type": "reels",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/JLHORGBBF3lqgb6",
+      "video_url": "s2-qui-case.mp4",
+      "cover_url": "s2-qui-case-cover.jpg",
+      "image_urls": [],
+      "caption": "A loja que dobrou as vendas mudando 1 coisa. 📈\n\nNão foi reforma cara nem mais anúncio. Foi atendimento: começaram a perguntar o nome do cliente e anotar o que ele costuma comprar.\n\nResultado? Recompra disparou. As pessoas voltam onde se sentem lembradas.\n\nQuer o passo a passo desse atendimento? Comenta \"QUERO\" 👇\n\n#varejo #vendas #atendimento #lojista #case #marketingparavarejo #recompra #gestaodeloja #donodeloja #comerciovarejista"
+    },
+    {
+      "id": "s2-sex-atendimento",
+      "scheduled_at": "2026-07-03T12:30:00-03:00",
+      "type": "carousel",
+      "status": "draft",
+      "canva_url": "https://www.canva.com/d/nODhG7pyK8_RwQ1",
+      "image_urls": [
+        "s2-sex-atendimento-1.jpg",
+        "s2-sex-atendimento-2.jpg",
+        "s2-sex-atendimento-3.jpg",
+        "s2-sex-atendimento-4.jpg",
+        "s2-sex-atendimento-5.jpg"
+      ],
+      "caption": "Roteiro de atendimento que fecha venda (em 5 passos). 🤝\n\n1. Receba: olhe nos olhos e cumprimente pelo nome.\n2. Entenda: pergunte pra que a pessoa precisa, não empurre.\n3. Mostre: apresente 2 opções, não 10 (excesso trava a decisão).\n4. Conduza: \"vamos levar esse?\" — ajude a decidir.\n5. Encante: agradeça e convide pra voltar.\n\nSalva e treina a equipe com esse roteiro. Quer a versão completa? Me chama na DM. 📩\n\n#atendimento #vendas #varejo #lojista #marketingparavarejo #equipedevendas #gestaodeloja #donodeloja #comerciovarejista #pequenosnegocios"
+    },
+
+    {
+      "id": "s3-seg-calendario",
+      "scheduled_at": "2026-07-06T12:30:00-03:00",
+      "type": "carousel",
+      "status": "draft",
+      "_criativo_pendente": true,
+      "canva_url": null,
+      "image_urls": [],
+      "caption": "O calendário do varejo: as datas que mais vendem no ano. 📅\n\nQuem se prepara com antecedência vende mais. Anote as principais:\n\n• Jan: liquidação de início de ano\n• Fev: Carnaval\n• Mai: Dia das Mães (uma das maiores!)\n• Ago: Dia dos Pais\n• Out: Dia das Crianças\n• Nov: Black Friday\n• Dez: Natal (a campeã)\n\nNão espere a semana da data pra agir — comece 30 dias antes. Salva esse calendário pro ano todo. 🔖\n\n#varejo #datascomerciais #marketing #vendas #lojista #blackfriday #natal #marketingparavarejo #gestaodeloja #donodeloja"
+    },
+    {
+      "id": "s3-ter-preparar",
+      "scheduled_at": "2026-07-07T19:30:00-03:00",
+      "type": "reels",
+      "status": "draft",
+      "_criativo_pendente": true,
+      "canva_url": null,
+      "video_url": null,
+      "cover_url": null,
+      "image_urls": [],
+      "caption": "Como preparar a loja para a próxima data comercial. 🛍️\n\nChecklist rápido:\n✔️ Estoque reforçado nos produtos certos\n✔️ Vitrine temática montada\n✔️ Equipe alinhada com a oferta\n✔️ Divulgação no Instagram e WhatsApp\n✔️ Caixa e troco preparados para o movimento\n\nData comercial não se improvisa. Salva e comece a preparar hoje. 🔖\n\n#varejo #datascomerciais #marketing #vendas #lojista #vitrine #marketingparavarejo #gestaodeloja #donodeloja #comerciovarejista"
+    },
+    {
+      "id": "s3-qua-qualdata",
+      "scheduled_at": "2026-07-08T12:30:00-03:00",
+      "type": "image",
+      "status": "draft",
+      "_criativo_pendente": true,
+      "canva_url": null,
+      "image_urls": [],
+      "caption": "Qual data mais vende na sua loja? 📆\n\nPra alguns é o Natal, pra outros o Dia das Mães, e tem quem fature mesmo é na Black Friday. Conhecer a SUA data campeã é o que te faz planejar o ano com inteligência.\n\nComenta aqui embaixo qual é a data que mais movimenta o seu caixa 👇 Quero entender o seu varejo.\n\n#varejo #datascomerciais #vendas #lojista #marketing #marketingparavarejo #gestaodeloja #donodeloja #comerciovarejista #pequenosnegocios"
+    },
+    {
+      "id": "s3-qui-campanha3passos",
+      "scheduled_at": "2026-07-09T19:30:00-03:00",
+      "type": "reels",
+      "status": "draft",
+      "_criativo_pendente": true,
+      "canva_url": null,
+      "video_url": null,
+      "cover_url": null,
+      "image_urls": [],
+      "caption": "Campanha sazonal em 3 passos simples. 🎯\n\n1. Oferta clara: uma promoção fácil de entender (não complique).\n2. Divulgação: avise antes nos Stories, feed e WhatsApp.\n3. Atendimento alinhado: toda a equipe sabendo a oferta de cor.\n\nCampanha que vende é simples de entender e fácil de divulgar. Salva pra montar a tua próxima. 🔖\n\n#varejo #campanha #datascomerciais #marketing #vendas #lojista #marketingparavarejo #gestaodeloja #donodeloja #comerciovarejista"
+    },
+    {
+      "id": "s3-sex-kit",
+      "scheduled_at": "2026-07-10T12:30:00-03:00",
+      "type": "carousel",
+      "status": "draft",
+      "_criativo_pendente": true,
+      "canva_url": null,
+      "image_urls": [],
+      "caption": "Kit de campanha sazonal: tudo pronto pra próxima data. 🎁\n\nO que todo lojista deveria ter na mão antes da data:\n\n• Artes de divulgação prontas\n• Roteiro de Stories da semana\n• Oferta e regras definidas\n• Vitrine temática planejada\n• Mensagem de WhatsApp pra base de clientes\n\nPreparei um material completo pra você não começar do zero. Link na bio 👆\n\n#varejo #campanha #datascomerciais #marketing #vendas #lojista #marketingparavarejo #gestaodeloja #donodeloja #comerciovarejista"
+    },
+
+    {
+      "id": "s4-seg-oquepostar",
+      "scheduled_at": "2026-07-13T12:30:00-03:00",
+      "type": "reels",
+      "status": "draft",
+      "_criativo_pendente": true,
+      "canva_url": null,
+      "video_url": null,
+      "cover_url": null,
+      "image_urls": [],
+      "caption": "Instagram da loja: o que postar quando você não sabe o que postar. 📲\n\nGuarda essa lista:\n• Produto novo chegando\n• Bastidor do dia a dia da loja\n• Cliente usando/levando o produto\n• Dica de uso ou cuidado\n• Promoção ou novidade da semana\n• Pergunta pros seguidores\n\nNão precisa de ideia genial todo dia — precisa de constância. Salva pra nunca mais travar. 🔖\n\n#instagramparalojas #varejo #marketingdigital #lojista #vendas #marketingparavarejo #conteudo #gestaodeloja #donodeloja #comerciovarejista"
+    },
+    {
+      "id": "s4-ter-anuncio",
+      "scheduled_at": "2026-07-14T19:30:00-03:00",
+      "type": "carousel",
+      "status": "draft",
+      "_criativo_pendente": true,
+      "canva_url": null,
+      "image_urls": [],
+      "caption": "Anúncio que vende: o básico bem feito. 🎯\n\nNão precisa ser expert pra anunciar bem. Acerte o trio:\n\n1. Público: quem você quer alcançar (idade, local, interesse).\n2. Criativo: foto/vídeo que para o dedo nos 2 primeiros segundos.\n3. Oferta: um motivo claro pra clicar AGORA.\n\nA maioria erra por anunciar pra \"todo mundo\" com um criativo fraco. Salva pra usar no próximo anúncio. 🔖\n\n#anuncios #trafego #varejo #marketingdigital #lojista #vendas #marketingparavarejo #gestaodeloja #donodeloja #comerciovarejista"
+    },
+    {
+      "id": "s4-qua-depoimento",
+      "scheduled_at": "2026-07-15T12:30:00-03:00",
+      "type": "image",
+      "status": "draft",
+      "_criativo_pendente": true,
+      "canva_url": null,
+      "image_urls": [],
+      "caption": "Prova social vende mais que qualquer anúncio. ⭐\n\nNada convence mais um novo cliente do que ver outro cliente satisfeito. Print de WhatsApp, comentário, foto de quem comprou — tudo isso é ouro.\n\nDica: peça sempre um feedback rápido depois da venda e guarde os melhores pra postar.\n\n[Espaço pra você colocar um depoimento real de cliente aqui]\n\nQuer resultado assim na sua loja? Me chama na DM 📩\n\n#provasocial #depoimento #varejo #vendas #lojista #marketing #marketingparavarejo #gestaodeloja #donodeloja #comerciovarejista"
+    },
+    {
+      "id": "s4-qui-dificuldade",
+      "scheduled_at": "2026-07-16T19:30:00-03:00",
+      "type": "reels",
+      "status": "draft",
+      "_criativo_pendente": true,
+      "canva_url": null,
+      "video_url": null,
+      "cover_url": null,
+      "image_urls": [],
+      "caption": "Qual a maior dificuldade da sua loja hoje? 🤔\n\nMovimento fraco? Cliente que só olha e não compra? Concorrência puxando preço? Equipe desmotivada?\n\nMe conta nos comentários (ou na caixinha de perguntas) qual é o seu maior desafio agora. Vou usar os mais comuns pra criar conteúdos que te ajudem de verdade. 👇\n\n#varejo #lojista #vendas #marketing #empreendedorismo #marketingparavarejo #gestaodeloja #donodeloja #comerciovarejista #pequenosnegocios"
+    },
+    {
+      "id": "s4-sex-trabalharcomigo",
+      "scheduled_at": "2026-07-17T12:30:00-03:00",
+      "type": "carousel",
+      "status": "draft",
+      "_criativo_pendente": true,
+      "canva_url": null,
+      "image_urls": [],
+      "caption": "Como trabalhar comigo. 🤝\n\nSe você é lojista e quer vender mais sem complicar, eu posso te ajudar:\n\n• Mentoria individual de marketing para o seu varejo\n• Diagnóstico da sua loja e do seu Instagram\n• Plano de ação prático, feito pra sua realidade\n\nNão é teoria de slide — é o que você aplica na segunda de manhã.\n\nVagas abertas essa semana. Garanta a sua pelo link na bio ou me chama na DM 📩\n\n#mentoria #varejo #marketing #lojista #vendas #marketingparavarejo #consultoria #gestaodeloja #donodeloja #comerciovarejista"
+    },
+    {
+      "id": "teste-publicacao",
+      "_nota": "POST DE TESTE. Cole a URL publica da imagem em image_urls e mude status para 'pending'. A data ja esta no passado, entao publica no proximo disparo do robo. Depois do teste, apague este post ou deixe como 'published'.",
+      "scheduled_at": "2026-06-20T00:00:00-03:00",
+      "type": "image",
+      "status": "draft",
+      "image_urls": [],
+      "caption": "🚀 Teste do sistema de publicação automática. Em breve, conteúdo de verdade sobre marketing e varejo por aqui. #teste #marketing #varejo"
+    }
+  ]
+}
