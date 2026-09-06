@@ -611,13 +611,41 @@ linhas — o mecanismo existe, a lista está vazia. **A shortlist acima aguarda 
 Júlio cadastrar na interface do Metricool** (brand 6544085); só depois disso os
 números passam a ser coletados.
 
-| Perfil | Handle | Cadastrado no Metricool | Estudado em |
+| Perfil | Handle | Confiança no handle | Cadastrado | Estudado em |
+|---|---|---|---|---|
+| Thiago Varejo | `@thiago.varejo` | alta | não | 06/09, parcial |
+| Daniela Cachich | `@danielacachich` | alta | não | — |
+| Alberto Serrentino | `@albertoserrentino` | alta | não | — |
+| Fábio Queiróz | `@fabioqueiroz.asserj` | alta | não | — |
+| Paulo H. Selani | `@paulovitrine` | **média — conferir** | não | 06/09, parcial |
+
+O handle do Selani é o único com dúvida. A ficha #17 do Favikon o mostra
+segurando o livro *Sua Loja Faz Psiu*, e `@paulovitrine` publica visual
+merchandising — mas nenhuma fonte ligou o nome ao handle numa frase só.
+Conferir na hora de cadastrar.
+
+### Porte dos perfis — o que a busca devolveu
+
+Números de busca na web, **não medidos por mim**. Faltam os de Selani e Queiróz.
+
+| Perfil | Seguidores | Posts | Seg. por post |
 |---|---|---|---|
-| Thiago Varejo | @thiago.varejo | não | 06/09/2026, parcial |
-| Paulo Henrique Selani | @paulovitrine | não | 06/09/2026, parcial |
-| Daniela Cachich | a confirmar | não | — |
-| Fábio Queiroz | a confirmar | não | — |
-| Alberto Serrentino | a confirmar | não | — |
+| Thiago Varejo | ~272.000 | ~2.944 | ~92 |
+| Daniela Cachich | ~33.000 | ~2.613 | ~13 |
+| Alberto Serrentino | ~11.000 | ~650 | ~17 |
+| **Júlio** | **914** | **160** | **~5,7** |
+
+"Seguidores por post" é métrica grosseira: as duas colunas acumulam ao longo do
+tempo e seguidor entra por muitas portas além de post. Serve como sinal de
+direção, não como medida.
+
+O que ela sugere: o Júlio converte cerca de **um terço** do que Serrentino e
+Cachich convertem por publicação, e **um dezesseis avos** do Thiago Varejo.
+
+**Serrentino é a referência mais útil das cinco.** 11 mil seguidores com apenas
+650 posts é a melhor relação entre os perfis de executivo e consultor, é a
+escala mais próxima da alcançável, e mostra que crescer em varejo não exige
+necessariamente os 2.944 posts do achado A.
 
 ### Estudo de 06/09/2026 — o que não deu para fazer
 
