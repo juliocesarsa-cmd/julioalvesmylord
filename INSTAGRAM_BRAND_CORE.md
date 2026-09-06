@@ -532,11 +532,85 @@ O item 7 é o produto. Estudo que não vira hipótese testável é entreteniment
 - Nunca adotar uma mecânica sem transformá-la em hipótese e medir. Achado 2.5
   existe porque uma regra plausível caiu quando foi testada nos dados
 
+### Fonte: ranking Favikon, 06/09/2026
+
+Relatório entregue pelo Júlio: **Favikon — Brazil · Instagram · Retail & FMCG**,
+top 50 (de um universo declarado de 200 criadores), datado de 06/09/2026.
+
+**O que o relatório contém, e o que não contém.** Cada ficha traz três coisas:
+um score Favikon, a posição em Retail & FMCG Brasil, e a posição no Instagram
+Brasil geral. **Não há número de seguidores, taxa de engajamento, contagem de
+posts nem frequência.** A fórmula do score Favikon não é explicada no
+documento, então não se sabe o que ele pondera.
+
+Consequência: a coluna "IG Brasil" abaixo é o único indicador de porte
+disponível, e é **ordinal, não absoluto** — diz quem é maior que quem, não
+quanto. Tratar como ordem de grandeza.
+
+Leitura feita das posições #1 a #19 e #49 a #50. As posições #20 a #47 não
+foram lidas.
+
+| # | Nome | Descritor | Score | IG Brasil |
+|---|---|---|---|---|
+| 1 | Luiza Helena Trajano | Presidente do conselho, Magazine Luiza | 86,5 | 4.659 |
+| 2 | Thiago Varejo | Retail leadership & store optimization | 83,6 | 11.333 |
+| 3 | Erik Kened | CEO de marca vegana de cuidado capilar | 82,7 | 14.312 |
+| 4 | José Evaldo Koch | CEO do Grupo Koch | 80,6 | 24.154 |
+| 5 | Fabio Neto | Retail innovation & business strategy | 80,4 | 25.204 |
+| 6 | Caio Camargo | Retail influencer e keynote speaker | 79,2 | 33.390 |
+| 7 | De Benguela | Fundadora da De Benguela | 78,5 | 38.132 |
+| 8 | Paulo Alencar | Empreendedor da indústria de alimentos | 78,1 | 40.925 |
+| 9 | Daniela Cachich | Executiva, inovação em bebidas | 76,3 | 52.414 |
+| 10 | Bruna Arguello | Vendas e liderança para loja física | 75,8 | 54.765 |
+| 11 | Gladson Theodoro | Mentor de distribuição de bebidas | 75,3 | 57.468 |
+| 12 | Claudio de Andrade Batista | CEO e fundador, Jurunense | 74,5 | 61.626 |
+| 13 | Gustavo Gadotti Duwe | Retail & growth strategist | 74,5 | 61.765 |
+| 14 | Camila Salek | Retail strategist & cultural explorer | 74,4 | 62.148 |
+| 15 | Rosana Dullius | Moda e arquitetura | 74,3 | 62.711 |
+| 16 | Pietro Bacchi | Móveis de luxo | 73,9 | 64.183 |
+| 17 | Paulo Henrique Selani | Visual merchandising para varejo de moda | 73,9 | 64.523 |
+| 18 | Joaquim Ferraz | CEO Jo's Professional, hair tech | 73,8 | 64.740 |
+| 19 | Fábio Queiroz | Retail futurist, presidente da ASSERJ | 73,7 | 65.265 |
+| 49 | Alberto Serrentino | Consultor e influenciador de varejo | 55,4 | 132.327 |
+| 50 | IVA | Educação em inovação no varejo | 54,5 | 135.388 |
+
+### O que este ranking diz — e o que ele não resolve
+
+A amplitude é o dado mais útil: do #4.659 ao #135.388 no Instagram Brasil. O
+topo e a base desta lista são operações de porte muito diferente.
+
+**O #1 é o menos instrutivo.** Luiza Helena Trajano distribui por notoriedade
+construída em décadas de vida pública. Nada da mecânica dela transfere para uma
+conta de 914 seguidores. Pelo critério desta seção, ela não entra no conjunto de
+referência.
+
+**Quem interessa é quem está no varejo e é pequeno o bastante para a mecânica
+importar.** Alberto Serrentino, autoridade real em varejo, aparece em #132.327 —
+ordens de grandeza mais perto do alcançável que o topo.
+
+### Shortlist proposta — 5 perfis para cadastrar no Metricool
+
+Escolhidos pelo critério desta seção, não pela posição no ranking.
+
+| Perfil | Posição | Por que entra |
+|---|---|---|
+| **Thiago Varejo** | #2, IG 11.333 | O melhor colocado que chegou lá por **conteúdo de varejo**, não por fama prévia. É o caso mais instrutivo do relatório inteiro |
+| **Daniela Cachich** | #9, IG 52.414 | Executiva sênior com marca pessoal, não criadora em tempo integral. **A posição mais parecida com a do Júlio** na lista |
+| **Paulo Henrique Selani** | #17, IG 64.523 | Vive de vitrine e visual merchandising. O Júlio publicou **dois carrosséis sobre vitrine que somaram 276 de alcance e 1 salvamento** (achado 1). Esse perfil mostra como o mesmo tema funciona |
+| **Fábio Queiroz** | #19, IG 65.265 | Presidente de associação de supermercados. **Setor exato** do Júlio |
+| **Alberto Serrentino** | #49, IG 132.327 | Autoridade em varejo na **escala mais próxima da alcançável**. Se a mecânica dele funciona nesse porte, transfere |
+
+Descartados de propósito: Luiza Helena Trajano (fama, não mecânica) e os perfis
+de FMCG, moda, móveis e beleza (Erik Kened, De Benguela, Pietro Bacchi, Rosana
+Dullius, Joaquim Ferraz), que estão na categoria mas fora do domínio da seção 8.
+
 ### Perfis cadastrados
 
 Nenhum até 06/09/2026. O conector de concorrentes do Metricool retornou zero
-linhas — o mecanismo existe, a lista está vazia.
+linhas — o mecanismo existe, a lista está vazia. **A shortlist acima aguarda o
+Júlio cadastrar na interface do Metricool** (brand 6544085); só depois disso os
+números passam a ser coletados.
 
 | Perfil | Motivo de entrada | Cadastrado no Metricool | Estudado em |
 |---|---|---|---|
-| — | — | — | — |
+| — | — | não | — |
