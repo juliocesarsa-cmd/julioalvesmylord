@@ -172,9 +172,27 @@ Distribuição diária: 0, 2, 3, 2, 1, 0, 3, 0, 0, 0, 0, 3, 4, 1, 2, 1, 0, 1, 2,
 **O crescimento para quando os posts param.** Último post em 26/08. Nos 10 dias
 seguintes: 2 seguidores. Não existe linha de base orgânica nesta conta.
 
-A métrica `follower_count` conta seguidores ganhos, não líquidos. A métrica
-`follows_and_unfollows` voltou vazia da API em 06/09, então 30/mês é teto, não
-líquido.
+### CORREÇÃO — crescimento líquido, via Metricool (06/09/2026)
+
+A Graph API do Instagram só entregou **seguidores ganhos**. O Metricool entrega
+ganhos e perdidos separados, e o número muda a conta:
+
+| 06/08 a 06/09 | |
+|---|---|
+| Ganhos (IGEV43) | **34** |
+| Perdidos (IGEV44) | **11** |
+| **Líquido** | **23** |
+| Saldo de seguidores (894 → 914) | **+20** |
+
+A pequena diferença entre 23 e 20 é normal — as duas séries são contadas em
+momentos diferentes. **O crescimento real está entre 20 e 23 por mês, não 30.**
+
+Cerca de **um terço de quem segue, deixa de seguir.** Isso não aparecia na
+medição anterior e piora o multiplicador da meta (ver seção 6).
+
+O Metricool confirma, por fonte independente, os achados 2 e 5: no período,
+**1 salvamento** (IGEV15), **0 compartilhamentos de post** (IGEV40) e **2
+compartilhamentos de Reel** (IGEV39), em 6 publicações.
 
 ### O funil
 
@@ -313,8 +331,15 @@ Isso está registrado porque a decisão foi dele, com o número na frente.
 |---|---|
 | Novos seguidores necessários | 4.086 |
 | Por mês | ~340 |
-| Taxa atual | 30 |
-| Multiplicador | ~11x |
+| Taxa atual **líquida** | **20 a 23** |
+| Multiplicador | **~15x a 17x** |
+
+O multiplicador foi corrigido em 06/09/2026. A estimativa anterior de 11x usava
+30/mês, que era o número de seguidores **ganhos**. Descontando os perdidos, a
+taxa real é de 20 a 23, e a meta exige entre 15 e 17 vezes isso.
+
+| | |
+|---|---|
 
 Capacidade de produção declarada pelo Júlio: **1 a 2 Reels por semana, gravando
 sozinho.** Cerca de 6 por mês.
