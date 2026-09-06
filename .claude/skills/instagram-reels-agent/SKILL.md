@@ -23,7 +23,8 @@ legenda.**
 
 ## POR QUE ESTE SKILL EXISTE
 
-Meta: 5.000 seguidores em 12 meses, contra 30 por mês hoje. Cerca de 11x.
+Meta: 5.000 seguidores em 12 meses, contra 20 a 23 líquidos por mês. **15x a 17x.**
+(Corrigido em 06/09/2026: os 30/mês anteriores eram ganhos, não líquidos.)
 
 A aritmética da seção 6 do Brand Core leva a um número só: **cada Reel precisa
 alcançar ~4.000 contas.** O único Reel medido alcançou 580, com retenção média
