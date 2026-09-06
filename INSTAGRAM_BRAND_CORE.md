@@ -459,3 +459,84 @@ minha. Ele escreve, eu consumo e removo.
 | # | Tema | Imagem disponível? | Status |
 |---|---|---|---|
 | — | (vazio) | — | — |
+
+---
+
+## 12. CONJUNTO DE REFERÊNCIA
+
+Perfis estudados para extrair mecânica, não para copiar conteúdo.
+
+### Critério de seleção — e por que ele não é "quem tem mais seguidor"
+
+O perfil útil é o que **fez a travessia que a conta está tentando fazer**: saiu
+de cerca de 1.000 para 10.000+ nos últimos 12 a 18 meses, em nicho adjacente.
+
+Perfil de 500 mil seguidores distribui por fama acumulada, não por estrutura de
+post. A mecânica dele não transfere para uma conta de 914. Estudar Luiza Helena
+Trajano ensina sobre autoridade construída em décadas, não sobre como sair de
+914.
+
+Cada referência entra por um destes motivos, declarado:
+
+| Motivo | O que se extrai |
+|---|---|
+| **Travessia recente** | a mecânica que produziu o crescimento |
+| **Mesmo público, outro formato** | como o mesmo tema vira vídeo que retém |
+| **Mesma posição** | executivo de varejo com marca pessoal — o que ele mostra e o que esconde |
+
+### O que se mede — e o que não dá para medir
+
+**Mensurável, via Metricool** (exige o perfil cadastrado como concorrente na
+interface, brand `6544085`):
+
+| Campo | Métrica |
+|---|---|
+| IGCO02 / IGCO03 | usuário e nome |
+| IGCO07 | seguidores |
+| IGCO08 | posts no período |
+| IGCO09 | curtidas médias por post |
+| IGCO10 | engajamento — interações por mil seguidores |
+| IGCO12 | Reels no período |
+
+**Não mensurável para contas de terceiros:** alcance, salvamentos,
+compartilhamentos, retenção de Reel. A API do Instagram só entrega isso para
+contas administradas pelo próprio dono, e o Composio não expõe
+`business_discovery`. Verificado em 06/09/2026.
+
+Isso tem uma consequência que precisa ser dita: **as métricas que mais importam
+nesta operação — salvamento, compartilhamento e retenção — são exatamente as que
+não dão para ver em concorrente.** Curtida e engajamento por mil seguidores é o
+que sobra, e é um proxy fraco.
+
+Nunca apresente estimativa de alcance ou retenção de terceiro como se fosse
+medida.
+
+### Protocolo por perfil
+
+Para cada referência, registrar:
+
+1. **Quem é, e por que entrou** — qual dos três motivos acima
+2. **Onde estava há 12 meses e onde está hoje** — se conhecido; se não, dizer
+3. **Divisão de formatos** — quantos Reels contra fotos no período (IGCO08 vs IGCO12)
+4. **Os 3 melhores posts** por curtidas, e o que têm em comum
+5. **Estrutura dos primeiros 2 segundos** dos Reels — observação manual
+6. **O que ele mostra de si** — rosto, família, trabalho, bastidor
+7. **Uma hipótese testável** para a conta do Júlio, escrita como experimento
+
+O item 7 é o produto. Estudo que não vira hipótese testável é entretenimento.
+
+### O que não fazer
+
+- Nunca copiar legenda, roteiro ou estrutura de frase de terceiro
+- Nunca importar tema que esteja fora do domínio da seção 8
+- Nunca adotar uma mecânica sem transformá-la em hipótese e medir. Achado 2.5
+  existe porque uma regra plausível caiu quando foi testada nos dados
+
+### Perfis cadastrados
+
+Nenhum até 06/09/2026. O conector de concorrentes do Metricool retornou zero
+linhas — o mecanismo existe, a lista está vazia.
+
+| Perfil | Motivo de entrada | Cadastrado no Metricool | Estudado em |
+|---|---|---|---|
+| — | — | — | — |
