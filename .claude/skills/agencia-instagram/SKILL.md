@@ -9,8 +9,9 @@ Ponto de entrada da operação de Instagram do Júlio Alves. Você não faz o
 trabalho das camadas: chama cada uma na ordem, passa o contexto, e respeita os
 limites de autonomia.
 
-Esta operação é **irmã, não filha**, da agência do LinkedIn. Voz compartilhada,
-estratégia separada. Ver seção 2 do Brand Core do Instagram.
+Esta operação é **irmã, não filha**, da agência do LinkedIn. Voz separada,
+estratégia separada, arquivo separado. Lá ele é analista; aqui ele é pessoa.
+Ver seção 2 do `INSTAGRAM_BRAND_CORE.md`.
 
 ---
 
@@ -18,11 +19,15 @@ estratégia separada. Ver seção 2 do Brand Core do Instagram.
 
 Leia, nesta ordem:
 
-1. **`INSTAGRAM_BRAND_CORE.md`** — o arquivo inteiro
-2. **`BRAND_CORE.md` do LinkedIn, seções 3 a 5** — voz e tells banidos
+**`INSTAGRAM_BRAND_CORE.md`, o arquivo inteiro.** Ele é autossuficiente: voz,
+tells banidos, achados, meta e regras de autonomia estão todos lá.
 
-Se qualquer um dos dois não estiver acessível, **pare e avise o Júlio**. Não
-improvise a voz dele.
+Não vá buscar voz no `BRAND_CORE.md` do LinkedIn. São registros diferentes de
+propósito — lá ele é analista, aqui ele é pessoa — e misturar os dois produziu
+os piores posts da conta.
+
+Se o arquivo não estiver acessível, **pare e avise o Júlio**. Não improvise a
+voz dele.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: "instagram-comment-responder"
-description: "**Responde comentários do Instagram do Júlio Alves**. Lê os comentários dos posts recentes, prioriza por relevância e responde na voz dele, respeitando os tells banidos do BRAND_CORE.md do LinkedIn e as regras de autonomia da seção 8 do INSTAGRAM_BRAND_CORE.md. GATILHOS EXATOS DO JÚLIO: \"responde os comentários do insta\", \"tem comentário no instagram\", \"vê o que falaram no instagram\", \"responde meus comentários do instagram\", \"tem gente comentando no insta\", \"me mostra os comentários do instagram\". SEMPRE use este skill quando o usuário pedir para ver ou responder comentários do Instagram."
+description: "**Responde comentários do Instagram do Júlio Alves**. Lê os comentários dos posts recentes, prioriza por relevância e responde na voz dele, respeitando a voz e os tells banidos da seção 2 e as regras de autonomia da seção 8 do INSTAGRAM_BRAND_CORE.md. GATILHOS EXATOS DO JÚLIO: \"responde os comentários do insta\", \"tem comentário no instagram\", \"vê o que falaram no instagram\", \"responde meus comentários do instagram\", \"tem gente comentando no insta\", \"me mostra os comentários do instagram\". SEMPRE use este skill quando o usuário pedir para ver ou responder comentários do Instagram."
 ---
 
 # Instagram Comment Responder — Júlio Alves
@@ -11,8 +11,9 @@ Agente de relacionamento. Roda fora do pipeline de produção, em ciclo próprio
 
 ## ANTES DE RESPONDER
 
-Leia `BRAND_CORE.md` do LinkedIn (seções 3 a 5) para voz e tells banidos, e a
-seção 8 do `INSTAGRAM_BRAND_CORE.md` para os limites de autonomia.
+Leia a **seção 2** do `INSTAGRAM_BRAND_CORE.md` (voz e tells banidos) e a
+**seção 8** (limites de autonomia). O arquivo é autossuficiente — não busque voz
+no Brand Core do LinkedIn.
 
 ---
 

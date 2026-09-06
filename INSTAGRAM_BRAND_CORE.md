@@ -24,30 +24,123 @@ antes de agir. Se ele não estiver acessível, **pare e avise o Júlio**.
 
 ---
 
-## 2. VOZ — NÃO DUPLICAR AQUI
+## 2. VOZ DO JÚLIO NO INSTAGRAM
 
-A voz do Júlio, os **tells banidos** e os marcadores de fricção humana vivem no
-`BRAND_CORE.md` do LinkedIn (seções 3, 4 e 5), na pasta do projeto "Virar top
-Voice no linkedin".
+Esta seção é **autônoma**. Não depende do `BRAND_CORE.md` do LinkedIn e não deve
+ser sincronizada com ele.
 
-**Leia de lá. Não copie para cá.**
+Isso é deliberado, e a razão importa: no LinkedIn ele é analista — tese, dado,
+argumento. No Instagram ele é **pessoa**. São dois registros diferentes do mesmo
+homem, e misturar os dois é exatamente o que produziu os piores posts da conta.
 
-Isso é deliberado. Foi exatamente a duplicação de regra em vários lugares que
-fez o tell "Não é X. É Y." aparecer em 89% dos posts do LinkedIn mesmo com um
-skill anti-IA existindo. Uma regra, um lugar.
+Tudo abaixo foi derivado de **42 legendas reais**, de ago/2025 a ago/2026, com a
+performance de cada uma na mão. Não é estilo inventado: é o que a conta dele já
+provou.
 
-Se o Brand Core do LinkedIn não estiver acessível, pare. Escrever legenda sem
-ele reintroduz o problema que já custou caro uma vez.
+---
 
-### O que é específico do Instagram
+### 2.1 Como ele escreve quando é ele mesmo
 
-O Instagram não é o LinkedIn com foto. Três diferenças que mudam a escrita:
+**Frase curta e exclamativa, quando é orgulho ou entusiasmo.**
 
-- **A imagem carrega o post, não a legenda.** No LinkedIn o texto é o produto.
-  Aqui ele é a nota de rodapé de uma imagem que já contou a história.
-- **A primeira linha aparece truncada** no feed, depois de "@julio_cs_alves".
-  Ela precisa funcionar sozinha, em ~50 caracteres.
-- **Ninguém veio aqui trabalhar.** Registro mais solto que o do LinkedIn.
+> "Ao lado da lenda!" — 125 curtidas, o melhor post da amostra
+> "Orgulho enorme!" — 100 curtidas e 24 comentários
+> "Se liga! Está rolando agora!"
+
+**Humor autodepreciativo.** Ele se coloca como o menos importante da cena.
+
+> "O Neymar não conseguiu mais eu estou no álbum 😁😂😂" — 72 curtidas
+
+**Emoji em cluster de três**, quase como pontuação:
+
+> 👽👽👽 · 🙏🙏🙏 · 😎😎😎 · 🌹🌹🌹 · ⚽️⚽️⚽️ · 🇯🇵🇯🇵🇯🇵
+
+**Família nomeada, sem cerimônia.**
+
+> "Time do Japão vem forte esse ano! Gigi de titular!" — 66 curtidas
+
+**Hashtag sozinha como legenda inteira**, quando a foto fala:
+
+> "#japan" — 49 · "#Godzilla" — 28 · "#tokyo #shibuya" — 23
+
+**Coloquialismo brasileiro:** "Se liga", "Segue a trend", "E aí", "tá rolando",
+"de verdade", "chato de tão simples".
+
+**Marca gente e lugar** com @ quando são reais na cena.
+
+---
+
+### 2.2 Registro
+
+| | |
+|---|---|
+| Pessoa | primeira. **Nunca terceira sobre si mesmo** |
+| Tom | direto, quente, sem solenidade |
+| Postura | ele é o cara na cena, não o especialista sobre a cena |
+| Vulnerabilidade | permitida e eficaz. "Confesso: dei menos palpite do que queria" |
+| Autoridade | vem do que ele viveu, nunca de cargo anunciado |
+
+---
+
+### 2.3 TELLS BANIDOS
+
+**Aviso de procedência:** esta lista foi **derivada por análise das legendas
+longas da própria conta**, não copiada de uma lista validada pelo Júlio. Ele
+ainda não a ratificou. Trate como proposta com evidência, não como lei — e peça
+a validação dele antes de tratar qualquer item como definitivo.
+
+Cada item abaixo saiu de uma legenda real dele que teve desempenho ruim.
+
+| # | Tell | Onde apareceu |
+|---|---|---|
+| T1 | **Terceira pessoa sobre si mesmo** | "Com essa frase, Júlio Alves, Diretor Sr. de Excelência Operacional do Grupo Carrefour Brasil, abre..." |
+| T2 | **Negação em série** | "não tinha cargo, não tinha empresa, não tinha salário" |
+| T3 | **Negação seguida de correção** | "não tem nome bonito em inglês. Não virou framework." |
+| T4 | **Tríade escalante** | "bloqueio, silêncio, esquecimento" · "transita entre marcas, compara, testa" |
+| T5 | **"A verdade é que..."** | "A verdade é que o consumidor mudou" — 12 curtidas, o pior post com legenda |
+| T6 | **"o que separa X de Y"** | "é o que separa quem vende de quem improvisa" — 4 curtidas |
+| T7 | **Despejo de hashtag** | 15 hashtags numa legenda só |
+| T8 | **Cargo anunciado na legenda** | "como CMO do Carrefour e Sam's Club" |
+| T9 | **Frase de efeito genérica de fim** | "Cuide bem de quem cuida de você" |
+| T10 | **Menção ao LinkedIn** | "aqui no LinkedIn", #LinkedIn |
+
+**T11 — O tell mais caro: CTA de engajamento.**
+
+> "Salva este calendário. E me conta: qual dessas datas é a mais importante?"
+> → **0 comentários, 0 salvamentos**
+>
+> "Orgulho enorme!"
+> → **24 comentários**, o maior número da amostra inteira
+
+Pedir engajamento nesta conta não reduz o engajamento — ele **anula**. Banido:
+"comenta aqui embaixo", "salva esse post", "marca alguém", "arrasta até o fim",
+"me conta nos comentários".
+
+---
+
+### 2.4 Marcadores de humanidade — mínimo 2 por legenda
+
+Ao menos dois destes, sempre:
+
+1. **Nome próprio real** — pessoa, loja, cidade, restaurante
+2. **Cena situada** — onde ele estava, o que estava acontecendo
+3. **Admissão** — algo que não saiu como planejado, ou que ele não sabia
+4. **Número que é dele**, com o raciocínio junto
+5. **Coloquialismo** da lista 2.1
+6. **Emoji usado como ele usa** — cluster, ou nenhum
+
+---
+
+### 2.5 Uma hipótese que foi testada e caiu
+
+Testado em 06/09/2026: **"legenda curta performa melhor que legenda longa"
+nesta conta.**
+
+Média das 20 legendas curtas: 39,2 curtidas. Média das 10 legendas longas: 38,0.
+**Empate. A hipótese não se sustenta.**
+
+Fica registrado para ninguém reintroduzir a regra depois. O que separa não é
+tamanho — é presença (achado 1 da seção 4).
 
 ---
 
@@ -110,7 +203,7 @@ Reel de 13/08: retenção média de 5,3 segundos.
 
 ---
 
-## 4. OS TRÊS ACHADOS QUE GOVERNAM A OPERAÇÃO
+## 4. OS ACHADOS QUE GOVERNAM A OPERAÇÃO
 
 ### Achado 1 — Post sem o Júlio dentro não é distribuído
 
@@ -144,6 +237,40 @@ debatido aqui no LinkedIn" e leva a hashtag #LinkedIn. É um post do LinkedIn
 publicado no Instagram sem adaptação. Alcance 418, salvos 0, compartilhados 0.
 
 **Regra que sai daí:** reaproveitar tema é permitido. Reaproveitar texto, não.
+
+### Achado 4 — Reel sem legenda é o pior formato da conta
+
+Cinco Reels publicados sem legenda nenhuma, entre dez/2025 e fev/2026:
+**5, 5, 5, 6 e 8 curtidas.** São os piores números da amostra de 42 posts.
+
+Reel é o motor de crescimento da conta (seção 6). Publicar um sem legenda é
+desperdiçar o formato mais caro de produzir.
+
+**Regra:** nenhum Reel vai ao ar sem legenda.
+
+### Achado 5 — Pedir engajamento anula o engajamento
+
+Post que pediu "me conta qual dessas datas é a mais importante": **0
+comentários.** Post que pediu "comenta: qual desses você já viu?": **0
+comentários.**
+
+Post que não pediu nada e dizia "Orgulho enorme!": **24 comentários** — o
+recorde da amostra.
+
+Ver T11 na seção 2.3. Esta é a regra mais bem sustentada do arquivo.
+
+### Achado 6 — A conta cresceu com presença, não com conteúdo de varejo
+
+Os cinco melhores posts de 42: "Ao lado da lenda!" (125), "Orgulho enorme!"
+(100), campanha do Carrefour no Valor (91), Dia dos Pais (77), Sam's Club
+cozinhando (76).
+
+Nenhum é conteúdo educativo de varejo. Todos têm o Júlio presente como pessoa.
+
+Os piores com legenda: artigo de hiperpersonalização (12), carrossel de vitrine
+(6 e 5), calendário comercial (4).
+
+Isso amplia o achado 1 de 6 para 42 posts.
 
 ### Ressalva metodológica
 

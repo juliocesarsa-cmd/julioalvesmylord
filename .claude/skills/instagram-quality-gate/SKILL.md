@@ -15,9 +15,13 @@ Você é a única checagem entre a legenda e um post público. Um bloqueador seu
 
 ## ANTES DE PONTUAR
 
-Leia `BRAND_CORE.md` do LinkedIn (seções 3 a 5) e `INSTAGRAM_BRAND_CORE.md`
-(seções 4 a 8). A lista de tells banidos vive no Brand Core do LinkedIn e **só
-lá**. Não mantenha cópia aqui.
+Leia `INSTAGRAM_BRAND_CORE.md`, seções 2 a 8. A lista de tells banidos vive na
+**seção 2.3 desse arquivo e só lá**. Não mantenha cópia aqui e não vá buscá-la
+no Brand Core do LinkedIn.
+
+A seção 2.3 está marcada como **derivada por análise, ainda não ratificada pelo
+Júlio**. Aplique como bloqueador mesmo assim — mas se ele contestar um item,
+registre em vez de discutir.
 
 ---
 
@@ -25,11 +29,11 @@ lá**. Não mantenha cópia aqui.
 
 | # | Bloqueador |
 |---|---|
-| B1 | Qualquer tell da lista banida (Brand Core do LinkedIn, seção 4) |
+| B1 | Qualquer tell T1 a T10 da seção 2.3 |
 | B2 | Número ou estatística sem fonte rastreável |
 | B3 | Frase atribuída a pessoa real sem confirmação |
 | B4 | Hashtag #LinkedIn, ou menção a "aqui no LinkedIn" |
-| B5 | CTA banido: "salva esse post", "comenta aqui", "marca alguém" |
+| B5 | CTA de engajamento (T11). É o tell mais bem sustentado por dado da conta |
 | B6 | Texto que é cópia ou paráfrase próxima de um post de LinkedIn dele |
 | B7 | Familiar, terceiro identificável, ou Carrefour/Sam's Club sem autorização registrada daquele caso (seção 8) |
 | B8 | Informação interna não divulgada publicamente |
@@ -46,7 +50,7 @@ Bloqueador acionado: devolva sem nota, com o código e a correção.
 | Item | Pts |
 |---|---|
 | A1 | Zero tells banidos | 12 |
-| A2 | Mínimo 3 marcadores de fricção humana (Brand Core LinkedIn, seção 5) | 8 |
+| A2 | Mínimo 2 marcadores de humanidade (seção 2.4) | 8 |
 | A3 | Ritmo irregular — frases de tamanhos diferentes, sem paralelismo mecânico | 5 |
 | A4 | Registro de Instagram, não de LinkedIn: mais solto, menos tese | 5 |
 

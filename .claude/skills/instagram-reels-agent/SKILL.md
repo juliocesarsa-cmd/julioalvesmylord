@@ -12,8 +12,12 @@ mantém a base, **Reel é o que traz gente nova**.
 
 ## ANTES DE ESCREVER
 
-Leia `INSTAGRAM_BRAND_CORE.md` seções 3, 4 e 6, e `BRAND_CORE.md` do LinkedIn
-seções 3 a 5 (voz e tells banidos).
+Leia `INSTAGRAM_BRAND_CORE.md`, seções 2 (voz e tells banidos), 3, 4 e 6. O
+arquivo é autossuficiente.
+
+Atenção ao **achado 4**: cinco Reels foram publicados sem legenda e renderam 5,
+5, 5, 6 e 8 curtidas — os piores números da conta. **Nenhum Reel vai ao ar sem
+legenda.**
 
 ---
 

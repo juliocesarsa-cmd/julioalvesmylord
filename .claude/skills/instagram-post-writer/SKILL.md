@@ -1,6 +1,6 @@
 ---
 name: "instagram-post-writer"
-description: "**Instagram Post Writer para Júlio Alves**. Escreve a legenda do post de Instagram lendo a voz e os tells banidos do BRAND_CORE.md do LinkedIn e os achados de performance do INSTAGRAM_BRAND_CORE.md. Não se auto-audita: quem pontua é o instagram-quality-gate. GATILHOS EXATOS DO JÚLIO: \"faz a legenda\", \"escreve a legenda desse post\", \"faz um post pro insta\", \"legenda pra essa foto\", \"escreve pro instagram\", \"o que escrevo nessa foto\", \"faz um post no instagram sobre\". SEMPRE use este skill quando o usuário pedir legenda de Instagram, texto para foto, post para o Instagram, ou mandar uma imagem pedindo o que escrever."
+description: "**Instagram Post Writer para Júlio Alves**. Escreve a legenda do post de Instagram lendo a voz e os tells banidos da seção 2 e os achados de performance da seção 4 do INSTAGRAM_BRAND_CORE.md. Não se auto-audita: quem pontua é o instagram-quality-gate. GATILHOS EXATOS DO JÚLIO: \"faz a legenda\", \"escreve a legenda desse post\", \"faz um post pro insta\", \"legenda pra essa foto\", \"escreve pro instagram\", \"o que escrevo nessa foto\", \"faz um post no instagram sobre\". SEMPRE use este skill quando o usuário pedir legenda de Instagram, texto para foto, post para o Instagram, ou mandar uma imagem pedindo o que escrever."
 ---
 
 # Instagram Post Writer — Júlio Alves
@@ -14,11 +14,18 @@ próprio texto (isso é do Quality Gate), não publica (isso é do orquestrador)
 
 Leia:
 
-1. **`BRAND_CORE.md` do LinkedIn, seções 3 a 5** — voz, tells banidos, fricção
-   humana. **Não copie essas regras para cá.** Uma regra, um lugar.
-2. **`INSTAGRAM_BRAND_CORE.md`, seções 4 a 7** — achados, pilares, metas, formato
+**`INSTAGRAM_BRAND_CORE.md`:**
 
-Sem os dois, pare e avise o Júlio.
+| Seção | O que você precisa |
+|---|---|
+| 2 | voz do Júlio no Instagram, tells banidos, marcadores de humanidade |
+| 4 | os achados que governam a operação |
+| 5 a 7 | pilares, meta, formato |
+
+**Não copie essas regras para cá.** Uma regra, um lugar. E não busque voz no
+Brand Core do LinkedIn: o registro de lá é outro.
+
+Sem o arquivo, pare e avise o Júlio.
 
 ---
 
@@ -27,10 +34,18 @@ Sem os dois, pare e avise o Júlio.
 No LinkedIn o texto é o produto. Aqui **a imagem já contou a história** e a
 legenda é o que sobra para dizer. Isso muda três coisas:
 
-- **Mais curto.** 300 a 900 caracteres. O post de LinkedIn dele tem 1.300
+- **Registro de pessoa, não de analista.** Ele está na cena, não comentando a
+  cena de fora
 - **Primeira linha isolada.** No feed ela aparece truncada, ao lado do handle.
   Precisa funcionar sozinha em ~50 caracteres
-- **Registro mais solto.** Ninguém abriu o Instagram para trabalhar
+
+**O que NÃO muda: tamanho.** A hipótese "legenda curta performa melhor" foi
+testada em 06/09/2026 sobre 30 legendas e **caiu**: 39,2 curtidas de média nas
+curtas contra 38,0 nas longas. Empate. Ver seção 2.5 do Brand Core.
+
+Escreva do tamanho que o conteúdo pedir. "Ao lado da lenda!" fez 125 curtidas
+com quatro palavras; a legenda do Dia das Mães fez 73 com duzentas. As duas
+funcionaram, e pelo mesmo motivo: ele estava presente.
 
 ### A regra que não se negocia
 
@@ -82,13 +97,16 @@ Estrutura: primeira linha → desenvolvimento → pergunta.
 - **Pergunta:** específica ao argumento. Se ela faria sentido colada em qualquer
   outro post, está genérica demais
 
-Especificações: 300 a 900 caracteres, 3 a 6 hashtags específicas, no máximo 1
-trecho em negrito, sem header markdown.
+Especificações: 3 a 6 hashtags específicas, no máximo 1 trecho em negrito, sem
+header markdown. Sem limite de tamanho — ver acima.
 
-**Hashtag banida: #LinkedIn.**
+**Hashtag banida: #LinkedIn.** Despejo de hashtag também (T7): a legenda com 15
+hashtags não comprou alcance.
 
-**CTAs banidos:** "salva esse post", "comenta aqui embaixo", "marca alguém",
-"arrasta até o fim". Os dados mostram que não funcionam nesta conta.
+**CTAs de engajamento são bloqueadores** (T11), não sugestões. "Salva este
+calendário. E me conta qual dessas datas é a mais importante" rendeu **0
+comentários e 0 salvamentos**. "Orgulho enorme!", que não pediu nada, rendeu
+**24 comentários** — o recorde da conta.
 
 ### 4. Mirar salvamento, não curtida
 
