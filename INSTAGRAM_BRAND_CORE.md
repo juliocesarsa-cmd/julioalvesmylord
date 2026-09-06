@@ -66,6 +66,35 @@ O Instagram não é o LinkedIn com foto. Três diferenças que mudam a escrita:
 A Meta rotula alcance e contas engajadas como "estimados e em desenvolvimento".
 Tratar como ordem de grandeza, não como número exato.
 
+### Crescimento, medido dia a dia (08/08 a 06/09/2026)
+
+| | |
+|---|---|
+| Novos seguidores em 30 dias | **30** (1 por dia) |
+| Cliques no link da bio | **0** |
+
+Distribuição diária: 0, 2, 3, 2, 1, 0, 3, 0, 0, 0, 0, 3, 4, 1, 2, 1, 0, 1, 2, 3,
+1, 0, 0, 0, 0, 1, 0, 0, 0, 0.
+
+**O crescimento para quando os posts param.** Último post em 26/08. Nos 10 dias
+seguintes: 2 seguidores. Não existe linha de base orgânica nesta conta.
+
+A métrica `follower_count` conta seguidores ganhos, não líquidos. A métrica
+`follows_and_unfollows` voltou vazia da API em 06/09, então 30/mês é teto, não
+líquido.
+
+### O funil
+
+| Etapa | 30 dias | Taxa |
+|---|---|---|
+| Contas alcançadas | 3.279 | — |
+| Visitas ao perfil | 208 | 6,3% |
+| Novos seguidores | 30 | 14,4% |
+
+**A conversão não é o problema.** Quem chega no perfil segue a 14%. O problema é
+volume de alcance: são necessárias cerca de 8 milhões de contas alcançadas para
+converter 99 mil seguidores nessa taxa, e a conta faz 3,3 mil por mês.
+
 ### Posts recentes, medidos um a um
 
 | Post | Data | Formato | Alcance | Views | Interações | Salvos | Compart. |
@@ -142,20 +171,74 @@ Testar antes de escalar.
 
 ---
 
-## 6. METAS
+## 6. META E A ARITMÉTICA DELA
 
-Metas de aprendizado, não promessas. Baseadas na linha de base medida acima.
+**Meta definida pelo Júlio em 06/09/2026: 5.000 seguidores em 12 meses.**
 
-| Métrica | Base atual | Meta | Por quê |
+Ele pediu 100.000. A conta foi feita e apresentada: a 30 seguidores por mês,
+100k levaria cerca de 275 anos, e em 3 anos exigiria 92x a taxa atual. Ele
+escolheu a meta intermediária para validar o modelo antes de perseguir 100k.
+Isso está registrado porque a decisão foi dele, com o número na frente.
+
+### O que 5.000 exige
+
+| | |
+|---|---|
+| Novos seguidores necessários | 4.086 |
+| Por mês | ~340 |
+| Taxa atual | 30 |
+| Multiplicador | ~11x |
+
+Capacidade de produção declarada pelo Júlio: **1 a 2 Reels por semana, gravando
+sozinho.** Cerca de 6 por mês.
+
+340 seguidores por mês, com a conversão medida de ~1% do alcance, exige cerca de
+**34.000 de alcance por mês**. Divididos por 6 a 8 posts: **~4.000 de alcance por
+post.**
+
+O melhor post da conta até hoje alcançou 609. O único Reel alcançou 580.
+
+**A meta exige ~7x o melhor resultado já obtido, toda semana.** Não é
+otimização. É mudança de patamar.
+
+### Honestidade sobre a meta
+
+5.000 em 12 meses é apertado e possível. 10.000 com 1 a 2 vídeos por semana e
+sem apoio de produção não é uma promessa que se sustenta nos números — não
+prometer isso ao Júlio faz parte do trabalho.
+
+Se em 90 dias a conta estiver em ritmo de 340/mês, o modelo escala e 100k volta
+para a mesa com dado. Se não estiver, a meta se revisa para baixo, não se
+empurra com esforço.
+
+### A variável única
+
+Alcance de Reel em conta pequena é governado por **retenção**. É o que faz o
+Instagram distribuir para não seguidores.
+
+Retenção medida no Reel de 13/08: **5,3 segundos.**
+
+| Métrica | Base | Meta 90 dias | Meta 12 meses |
 |---|---|---|---|
-| Salvamentos por post | 0 | 5+ | é o sinal que falta |
-| Compartilhamentos por post | 0 | 3+ | é o que traz gente nova |
-| Alcance por post | 130–609 | 500+ no piso | eliminar os posts que não distribuem |
-| Retenção de Reel | 5,3s | 8s+ | reels alcançam bem e engajam mal |
+| Retenção média de Reel | 5,3s | 8s | 12s+ |
+| Alcance por Reel | 580 | 1.500 | 4.000 |
+| Compartilhamentos por post | 0 | 3 | 10 |
+| Salvamentos por post | 0 | 5 | 15 |
+| Novos seguidores por mês | 30 | 120 | 340 |
 
-Um post com 20 curtidas e 8 salvamentos vale mais que um com 77 curtidas e 0.
+**Retenção é a métrica número um da operação.** Curtida não entra em relatório
+como manchete.
 
----
+### Divisão de papéis dos formatos
+
+| Formato | Papel | Frequência |
+|---|---|---|
+| **Reel** | crescimento. Único formato que alcança não seguidores | 1 a 2 por semana |
+| **Foto** | manutenção da base e prova de humanidade | 1 por semana |
+| **Carrossel** | só quando o conteúdo for genuinamente guardável | raro, sob justificativa |
+
+O carrossel está rebaixado de propósito: os dois publicados renderam 146 e 130
+de alcance, e 1 salvamento somado.
 
 ## 7. FORMATO
 

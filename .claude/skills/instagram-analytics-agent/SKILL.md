@@ -12,12 +12,20 @@ escrita, o ciclo não fecha e a semana seguinte planeja sem retrovisor.
 
 ## A MÉTRICA QUE IMPORTA NESTA CONTA
 
-Curtida não é o indicador. Da seção 4 do `INSTAGRAM_BRAND_CORE.md`: os seis
-posts medidos em 06/09/2026 tiveram **0 salvamentos** (um teve 1) e **0
-compartilhamentos** (um Reel teve 2). Isso é o teto de crescimento da conta.
+Meta: **5.000 seguidores em 12 meses**, contra 30 por mês hoje. A seção 6 do
+`INSTAGRAM_BRAND_CORE.md` tem a aritmética.
 
-Portanto, ao reportar: **salvamentos e compartilhamentos primeiro.** Alcance
-depois. Curtida por último.
+A ordem de reporte, e ela não muda:
+
+1. **Retenção de Reel** (`ig_reels_avg_watch_time`) — governa o alcance, que
+   governa o crescimento. Linha de base: 5,3s
+2. **Compartilhamentos e salvamentos** — 0 em toda a conta
+3. **Novos seguidores no mês** — contra a meta de 340
+4. **Alcance**
+5. Curtida, por último
+
+Curtida nunca é manchete de relatório. Um Reel com 15 curtidas e retenção de 11
+segundos é uma vitória maior que uma foto com 77 curtidas.
 
 Um post com 20 curtidas e 8 salvamentos é uma vitória. Um com 77 curtidas e 0
 salvamentos é o padrão que já não está funcionando.
@@ -57,6 +65,21 @@ Cuidados:
 Confirmado em 06/09/2026: insights funcionam nesta conta com 914 seguidores,
 apesar de a documentação citar 1.000 como piso.
 
+### 2b. Crescimento
+
+`INSTAGRAM_GET_USER_INSIGHTS` com `metric: ["follower_count"]`, `period: "day"`,
+sem `metric_type`. Devolve a série diária de seguidores ganhos.
+
+Some os 30 dias e compare com a meta de 340/mês. Some também o mês corrente
+contra o anterior.
+
+**Cuidado:** `follower_count` conta ganhos, não líquidos.
+`follows_and_unfollows` voltou vazia da API em 06/09/2026 — se continuar vazia,
+diga que o número é teto e não líquido. Não estime unfollows.
+
+Cruze com as datas de publicação. Em 06/09 o padrão era claro: sem post, o
+crescimento ia a zero em dias.
+
 ### 3. Interpretar
 
 Compare cada post contra a linha de base da seção 3 do Brand Core, e responda:
@@ -93,8 +116,11 @@ valida. Cada uma precisa de evidência numérica ao lado.
 ```
 INSTAGRAM — [período]
 
-SALVAMENTOS: [n]    COMPARTILHAMENTOS: [n]
-[a leitura, em 1 linha]
+RETENÇÃO MÉDIA DE REEL: [n]s   (base 5,3s | meta 90d 8s)
+COMPARTILHAMENTOS: [n]    SALVAMENTOS: [n]
+
+NOVOS SEGUIDORES NO MÊS: [n]   (meta 340 | ritmo para 5k em 12 meses)
+[estamos no ritmo, ou não, e por quê — em 1 linha]
 
 ALCANCE: [n]    VISITAS AO PERFIL: [n]    SEGUIDORES: [n]
 

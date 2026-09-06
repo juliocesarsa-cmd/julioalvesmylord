@@ -30,13 +30,41 @@ improvise a voz dele.
 
 | # | Camada | Skill | O que faz |
 |---|---|---|---|
-| 0 | Brand Core | `INSTAGRAM_BRAND_CORE.md` | estado, achados, regras de autonomia |
+| 0 | Brand Core | `INSTAGRAM_BRAND_CORE.md` | estado, achados, meta, regras de autonomia |
 | 1 | Analytics | `instagram-analytics-agent` | mede e escreve na seção 9 |
-| 2 | Writer | `instagram-post-writer` | escreve a legenda |
-| 3 | Quality Gate | `instagram-quality-gate` | pontua antes de ir ao ar |
-| 4 | Publicação | Composio (Instagram) ou Metricool | publica ou agenda |
+| 2 | Reels | `instagram-reels-agent` | roteiro do vídeo. **Motor de crescimento** |
+| 3 | Writer | `instagram-post-writer` | escreve a legenda |
+| 4 | Quality Gate | `instagram-quality-gate` | pontua antes de ir ao ar |
+| 5 | Publicação | Composio (Instagram) ou Metricool | publica ou agenda |
 
 Fora do pipeline: `instagram-comment-responder`, em ciclo próprio.
+
+---
+
+## A META GOVERNA A CADÊNCIA
+
+Meta do Júlio, definida em 06/09/2026: **5.000 seguidores em 12 meses.** Ele
+pediu 100.000; a aritmética foi apresentada e ele escolheu validar o modelo
+primeiro. Seção 6 do Brand Core tem a conta inteira.
+
+Isso exige ~340 seguidores por mês contra 30 hoje. Cerca de 11x.
+
+Consequência prática, e ela reordena tudo:
+
+| Formato | Papel | Frequência |
+|---|---|---|
+| **Reel** | crescimento. Único formato que alcança não seguidores | 1 a 2 por semana |
+| **Foto** | manutenção da base | 1 por semana |
+| **Carrossel** | só se for genuinamente guardável | raro, sob justificativa |
+
+**Reel é a prioridade da semana.** Se só der para produzir uma coisa, é o Reel.
+Semana sem Reel é semana sem crescimento — a foto segura a base e não traz gente
+nova.
+
+A métrica que manda é **retenção**, não curtida. Linha de base: 5,3 segundos.
+
+Capacidade declarada pelo Júlio: 1 a 2 vídeos por semana, gravando sozinho. Não
+monte plano que dependa de mais do que isso.
 
 ---
 
@@ -76,9 +104,14 @@ já mandou.
 - Não tem nem um nem outro → proponha ângulos a partir dos pilares (seção 5) e
   peça o material
 
-### Passo 3 — Escrever
+### Passo 3 — Produzir
 
-Chame `instagram-post-writer` para cada post da fila.
+**Reel primeiro.** Chame `instagram-reels-agent` para o roteiro da semana. Ele
+gera 3 ganchos, o Júlio escolhe, e o roteiro sai com beats marcados e a hipótese
+que está sendo testada.
+
+Depois chame `instagram-post-writer` para a legenda do Reel e para os demais
+posts da fila. A legenda do Reel não repete o vídeo.
 
 ### Passo 4 — Quality Gate
 
