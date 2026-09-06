@@ -611,6 +611,63 @@ linhas — o mecanismo existe, a lista está vazia. **A shortlist acima aguarda 
 Júlio cadastrar na interface do Metricool** (brand 6544085); só depois disso os
 números passam a ser coletados.
 
-| Perfil | Motivo de entrada | Cadastrado no Metricool | Estudado em |
+| Perfil | Handle | Cadastrado no Metricool | Estudado em |
 |---|---|---|---|
-| — | — | não | — |
+| Thiago Varejo | @thiago.varejo | não | 06/09/2026, parcial |
+| Paulo Henrique Selani | @paulovitrine | não | 06/09/2026, parcial |
+| Daniela Cachich | a confirmar | não | — |
+| Fábio Queiroz | a confirmar | não | — |
+| Alberto Serrentino | a confirmar | não | — |
+
+### Estudo de 06/09/2026 — o que não deu para fazer
+
+**O estudo de Reels não foi feito.** `instagram.com` e `youtube.com` estão
+bloqueados pelo proxy de egresso deste ambiente (`EGRESS_BLOCKED`). Nenhum
+vídeo foi assistido, nenhum gancho foi lido, nenhuma retenção foi observada.
+
+Isso significa que **os itens 3, 4, 5 e 6 do protocolo continuam em aberto** para
+os dois perfis. O que segue veio de busca na web, é de segunda mão, e está
+marcado como tal.
+
+### Achado A — o volume da única referência mensurável
+
+Reportado em resultados de busca, **não verificado diretamente**:
+@thiago.varejo teria cerca de **272 mil seguidores e 2.944 posts**.
+
+O Júlio tem **160 posts e 914 seguidores**. Cerca de 18x menos publicações.
+
+Isso importa porque a meta da seção 6 assume 1 a 2 Reels por semana, o que dá
+por volta de 78 posts por ano. A única referência de crescimento em varejo cujo
+porte foi possível estimar construiu sobre volume alto e sustentado, mais lives
+semanais e um canal de YouTube.
+
+**Não é conclusão de que o Júlio precisa de 2.944 posts.** É um sinal de que o
+plano de baixo volume tem que compensar em outra variável — que é retenção, a
+aposta declarada da seção 6. Se em 90 dias a retenção não subir, essa é a
+primeira hipótese a revisar.
+
+### Achado B — o Júlio entrou no território de alguém que é dono dele
+
+Paulo Selani, @paulovitrine, tem **29 anos dedicados a visual merchandising**,
+um livro best-seller (*Sua Loja Faz Psiu*), um conceito nomeado e próprio
+("o vendedor silencioso"), e uma operação de palestras e treinamentos pelo país.
+
+O Júlio publicou dois carrosséis de **"5 erros de vitrine"** — conteúdo genérico
+de dicas — nesse mesmo tema. Alcance: **146 e 130**, os dois piores da conta.
+
+A leitura: o problema daqueles posts não foi só o formato (achado 1). Foi
+disputar uma categoria onde outra pessoa tem três décadas, um livro e um
+framework com nome.
+
+**Regra que sai daí:** o Júlio compete onde a experiência dele é intransferível —
+a operação de dentro, a escala, a decisão que ele tomou. Não em tema onde um
+especialista dedicado já é a referência.
+
+### Achado C — nenhum dos dois vive de seguidor
+
+Thiago Varejo tem YouTube e lives semanais. Selani vive de livro, palestra e
+treinamento. Para os dois, o Instagram alimenta um negócio que acontece fora
+dele.
+
+Relevante para a decisão de meta da seção 6, e para a pergunta que o Júlio ainda
+não respondeu: o que 5.000 seguidores precisam produzir para ele.
