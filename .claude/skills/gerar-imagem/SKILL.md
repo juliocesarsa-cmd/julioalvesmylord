@@ -30,16 +30,63 @@ Então:
 Se o pedido for de post do LinkedIn, chame a `linkedin-designer` primeiro e use
 esta skill só se ela pedir um elemento gráfico que não existe no acervo de fotos.
 
-## SETUP (uma vez)
+## ONDE GUARDAR A CHAVE
 
-Precisa de uma chave da API Gemini, obtida em <https://aistudio.google.com/apikey>.
+Chave da API Gemini, obtida em <https://aistudio.google.com/apikey>.
+Escolha a rota pelo lugar onde a skill vai rodar.
+
+### Rota A — API credential do ambiente (mais segura, sessão na web)
+
+A chave fica guardada no ambiente e o agent proxy da Anthropic carimba o header
+depois que a requisição sai da VM. **A chave nunca entra na sessão**: não aparece
+em variável de ambiente, não aparece em arquivo, e o agente não a vê.
+
+Disponível nos planos Pro e Max. Em claude.ai/code, abra o ambiente para edição →
+**API credentials** → **Add credential**:
+
+| Campo | Valor |
+|---|---|
+| Name | `Gemini` |
+| Allowed websites | `generativelanguage.googleapis.com` |
+| Custom headers → Name | `x-goog-api-key` |
+| Custom headers → Prefix | **vazio** (apague o `Bearer`) |
+| Custom headers → Value | a chave |
+
+O prefixo tem de ficar vazio: foi testado contra a API e `Authorization: Bearer`
+é lido como OAuth, não como API key. O header que funciona é `x-goog-api-key`
+com o valor puro.
+
+Depois, rode com `--via-proxy`, que manda a requisição sem chave:
 
 ```bash
-export GEMINI_API_KEY='sua-chave'
+python3 scripts/gerar_imagem.py --via-proxy --prompt "..." --saida out.png
 ```
 
-Sem a chave, o script para com instrução clara em vez de falhar de forma obscura.
-`GOOGLE_API_KEY` também é aceita.
+### Rota B — variável de ambiente
+
+Mais simples, e a única opção fora de sessão na web. A chave fica legível para
+qualquer comando da sessão, inclusive para o agente.
+
+**Máquina local (Mac):** ponha no shell profile para persistir.
+
+```bash
+echo 'export GEMINI_API_KEY="sua-chave"' >> ~/.zshrc && source ~/.zshrc
+```
+
+**Sessão na web:** em claude.ai/code, abra o ambiente → **Environment variables**,
+formato `.env`, uma linha:
+
+```
+GEMINI_API_KEY=sua-chave
+```
+
+Vale para sessões **novas**: a sessão em andamento não relê a configuração.
+
+### Onde NÃO guardar
+
+- **Não cole a chave no chat.** Ela fica gravada no transcript da conversa.
+- **Não comite** em repositório. Se usar arquivo `.env`, confirme que ele está
+  no `.gitignore` antes.
 
 O script usa só a biblioteca padrão do Python 3. Não precisa de `pip install`.
 
@@ -85,6 +132,7 @@ de pessoa.
 | `--proporcao` | `1:1` `2:3` `3:2` `3:4` `4:3` `4:5` `5:4` `9:16` `16:9` `21:9` `1:4` `4:1` `1:8` `8:1` | LinkedIn retrato = `4:5`. Omitido, o modelo decide. |
 | `--tamanho` | `512` `1K` `2K` `4K` | Padrão da API é `1K`. |
 | `--referencia` | caminho de imagem | Repetível. |
+| `--via-proxy` | — | Não envia chave; usa a API credential do ambiente (Rota A). |
 
 Os valores acima vieram do documento de discovery da API, não de memória.
 

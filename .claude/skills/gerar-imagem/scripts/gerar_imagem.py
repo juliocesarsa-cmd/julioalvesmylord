@@ -40,14 +40,23 @@ class ErroAPI(Exception):
     pass
 
 
-def _chave():
+def _chave(via_proxy=False):
+    """Devolve a chave, ou None quando ela e injetada por um proxy.
+
+    No modo --via-proxy o script nao envia chave nenhuma: quem carimba o
+    header `x-goog-api-key` e o agent proxy do ambiente, e a chave nunca
+    passa pela sessao."""
+    if via_proxy:
+        return None
     for nome in ("GEMINI_API_KEY", "GOOGLE_API_KEY"):
         valor = os.environ.get(nome)
         if valor:
             return valor
     raise ErroAPI(
-        "Nenhuma chave encontrada. Defina GEMINI_API_KEY no ambiente.\n"
+        "Nenhuma chave encontrada. Ou defina GEMINI_API_KEY no ambiente:\n"
         "  export GEMINI_API_KEY='sua-chave'\n"
+        "ou, se a chave estiver cadastrada como API credential do ambiente,\n"
+        "rode com --via-proxy.\n"
         "A chave se obtem em https://aistudio.google.com/apikey"
     )
 
@@ -60,7 +69,11 @@ def _redigir(texto, chave):
 def _pedir(caminho, chave, corpo=None, timeout=180):
     """Chama a API. A chave vai como query param `key`, forma documentada
     no discovery doc. Retorna o JSON decodificado."""
-    url = f"{BASE}/{caminho}?" + urllib.parse.urlencode({"key": chave})
+    url = f"{BASE}/{caminho}"
+    if chave:
+        # Forma documentada no discovery doc. Sem chave, a requisicao sai
+        # "pelada" e o agent proxy do ambiente injeta o header de auth.
+        url += "?" + urllib.parse.urlencode({"key": chave})
     dados = json.dumps(corpo).encode() if corpo is not None else None
     req = urllib.request.Request(
         url,
@@ -201,10 +214,13 @@ def main():
                    help="Lista os modelos reais da conta e sai.")
     p.add_argument("--todos", action="store_true",
                    help="Com --listar-modelos, mostra todos, nao so os de imagem.")
+    p.add_argument("--via-proxy", action="store_true",
+                   help="Nao envia chave: ela e injetada pelo agent proxy do "
+                        "ambiente (API credential). Ver SKILL.md.")
     args = p.parse_args()
 
     try:
-        chave = _chave()
+        chave = _chave(via_proxy=args.via_proxy)
 
         if args.listar_modelos:
             modelos = listar_modelos(chave, so_imagem=not args.todos)
